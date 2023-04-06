@@ -138,7 +138,7 @@
                             </svg>
 
                             <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
+                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Revisión</h2>
 
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                             </svg>
 
                             <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
+                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Documentos</h2>
 
                             </div>
                         </div>
@@ -166,7 +166,7 @@
                             </svg>
 
                             <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
+                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrega de mascota</h2>
 
                             </div>
                         </div>
@@ -185,7 +185,7 @@
             <div class="dark:bg-gray-800 dark:text-white max-w-4xl bg-white w-full rounded-lg shadow-xl">
                 <div class="p-4 border-b">
                     <h2 class="text-2xl ">
-                        Proceso de la solicitud
+                        Proceso Final
                     </h2>
                     <p class="text-sm text-gray-500">
                         Datos personales y solicitud.
@@ -193,63 +193,12 @@
                 </div>
                 <div>
 
-                    <div class="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto rounded-xl dark:border-gray-700">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400 sm:h-9 sm:w-9" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
 
-                            <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
 
-                            </div>
-                        </div>
+                    <button class="bg-transparent mx-12 my-12 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Generar PDF
+                      </button>
 
-                        <h2 class="text-2xl font-semibold text-green-500 sm:text-xl dark:text-green-300">Completado <span class="text-base font-medium"></span></h2>
-                    </div>
-
-                    <div class="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto rounded-xl dark:border-gray-700">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400 sm:h-9 sm:w-9" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-
-                            <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
-
-                            </div>
-                        </div>
-
-                        <h2 class="text-2xl font-semibold text-green-500 sm:text-xl dark:text-green-300">Completado <span class="text-base font-medium"></span></h2>
-                    </div>
-                    <div class="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto rounded-xl dark:border-gray-700">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400 sm:h-9 sm:w-9" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-
-                            <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
-
-                            </div>
-                        </div>
-
-                        <h2 class="text-2xl font-semibold text-green-500 sm:text-xl dark:text-green-300">Completado <span class="text-base font-medium"></span></h2>
-                    </div>
-                    <div class="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto rounded-xl dark:border-gray-700">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400 sm:h-9 sm:w-9" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-
-                            <div class="flex flex-col items-center mx-5 space-y-1">
-                                <h2 class="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">Entrevista</h2>
-
-                            </div>
-                        </div>
-
-                        <h2 class="text-2xl font-semibold text-green-500 sm:text-xl dark:text-green-300">Completado <span class="text-base font-medium"></span></h2>
-                    </div>
 
 
                 </div>
