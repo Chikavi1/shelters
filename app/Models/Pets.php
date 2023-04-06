@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pets extends Model
 {
-    protected $table = 'pets';
+    protected $table = 'Pets';
     const CREATED_AT = 'createdAt';
     const UPDATED_AT = 'updatedAt';
 

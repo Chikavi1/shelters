@@ -64,7 +64,7 @@
                         <p class="text-gray-600 dark:text-white dark:font-bold">
                             Domicilio
                         </p>
-                        <div id="mapa" style="min-height:10em; min-width:15em;" class="w-full h-60">
+                        <div id="mapa" style="border-radius:1em;min-height:10em; min-width:15em;" class="w-full h-60">
 
                         </div>
 

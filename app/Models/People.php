@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class People extends Model
 {
-    protected $table = 'users';
+    protected $table = 'Users';
     const CREATED_AT = 'createdAt';
     const UPDATED_AT = 'updatedAt';
 

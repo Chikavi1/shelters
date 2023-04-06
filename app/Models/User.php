@@ -12,7 +12,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = 'organizations';
+    protected $table = 'Organizations';
     const CREATED_AT = 'createdAt';
     const UPDATED_AT = 'updatedAt';
 
