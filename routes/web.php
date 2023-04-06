@@ -29,6 +29,8 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::resource('requests', RequestsController::class);
     Route::resource('pets', PetsController::class);
+    Route::get('generate-pdf', [RequestsController::class, 'generatePDF']);
+
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

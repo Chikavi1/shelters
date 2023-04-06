@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DataTables;
 use App\Models\Requests;
+use PDF;
 
 class RequestsController extends Controller
 {
@@ -68,5 +69,19 @@ class RequestsController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function generatePDF()
+    {
+        $users = Requests::find(1);
+
+        $data = [
+            'title' => 'Contrato de adopción',
+            'date' => date('d/m/Y'),
+            'users' => $users
+        ];
+
+        $pdf = PDF::loadView('requests.pdf', $data);
+
+        return $pdf->stream();
     }
 }
