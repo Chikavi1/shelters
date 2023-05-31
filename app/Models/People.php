@@ -11,5 +11,22 @@ class People extends Model
     const CREATED_AT = 'createdAt';
     const UPDATED_AT = 'updatedAt';
 
+
+    protected $fillable = [
+        'name',
+        'photo',
+        'email',
+        'cellphone',
+        'notifications',
+        'country',
+        'currency',
+        'interest',
+        'coupon',
+        'customer',
+        'birthday',
+        'gender'
+];
+
     use HasFactory;
+
 }

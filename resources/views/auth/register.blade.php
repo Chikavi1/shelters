@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+    {{-- <form method="POST" action="{{ route('register') }}">
         @csrf
 
         <!-- Name -->
@@ -48,5 +48,8 @@
                 {{ __('Register') }}
             </x-primary-button>
         </div>
-    </form>
+    </form> --}}
+<div class="dark:text-white">
+    <p>Para solicitar el registro en Radi Pets, por favor comuníquese con uno de nuestros agentes autorizados. <br><br> Este proceso es esencial para garantizar la seguridad de los datos sensibles que manejamos, y asegurar la verificación de cada cuenta. <br><br> Agradecemos su comprensión y estamos comprometidos en brindar un servicio confiable y profesional.</p>
+</div>
 </x-guest-layout>

@@ -11,5 +11,27 @@ class Pets extends Model
     const CREATED_AT = 'createdAt';
     const UPDATED_AT = 'updatedAt';
 
+    protected $fillable = [
+            'name'              ,
+            'photo'          ,
+            'image'           ,
+            'description'      ,
+            'chronic_disease'  ,
+            'gender'           ,
+            'birthday'           ,
+            'specie'           ,
+            'latitude',
+            'longitude',
+            'sterelized'       ,
+            'sterelized_date'   ,
+            'breed'            ,
+            'size'             ,
+            'color_necklace'   ,
+            'weight'           ,
+            'id_organization'  ,
+            'status'            ,
+    ];
+
+
     use HasFactory;
 }

@@ -4,8 +4,8 @@
 <metadata>
 </metadata>
 <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-class="text-purple-80"
-fill="#FFFFFF" stroke="none">
+class="fill-logo"
+ stroke="none">
 <path d="M2230 4780 c-722 -78 -1393 -533 -1747 -1185 -188 -347 -273 -688
 -273 -1097 0 -263 32 -473 106 -703 281 -867 1043 -1482 1952 -1576 244 -25
 570 0 815 62 530 134 1015 481 1332 954 137 206 270 517 324 761 52 233 67
@@ -27,3 +27,14 @@ c149 -46 290 -146 360 -255 78 -121 115 -312 106 -540 -8 -188 -29 -340 -62
 87 36 139 60 123 213 239 372 283 68 18 205 14 271 -9z"/>
 </g>
 </svg>
+
+<style>
+    .fill-logo{
+        fill: #17202F;
+    }
+    @media (prefers-color-scheme: dark) {
+        .fill-logo{
+        fill: white;
+    }
+    }
+</style>

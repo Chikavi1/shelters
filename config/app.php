@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Mexico_City',
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -182,6 +182,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
 
 
         /*
@@ -196,6 +198,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,//Add this code
+        Stevebauman\Location\LocationServiceProvider::class,
+
 
     ],
 
@@ -212,6 +217,13 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         	'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+            'Form' => Collective\Html\FormFacade::class,
+            'Html' => Collective\Html\HtmlFacade::class,
+            'PDF' => Barryvdh\DomPDF\Facade::class,//Add this code
+            'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+            'Location' => 'Stevebauman\Location\Facades\Location',
+
+
 
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
