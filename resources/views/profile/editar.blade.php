@@ -8,8 +8,8 @@
 
         <div class="py-12 container max-w-screen-lg mx-auto">
             <div>
-                <h2 class="font-semibold text-xl dark:text-white text-gray-600 mt-6">Edita el perfil de tu refugio</h2>
-                <p class="text-gray-500 mb-6">* Campos obligatorios</p>
+                <h2 class="font-semibold text-xl dark:text-white text-gray-600 mt-6 ml-4">Edita el perfil de tu refugio</h2>
+                <p class="text-gray-500 mb-6 ml-4">* Campos obligatorios</p>
 
                 <div class="dark:bg-gray-800 bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                     <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">

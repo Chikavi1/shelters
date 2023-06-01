@@ -77,6 +77,7 @@ public function preregister(){
     return view('pre-register');
 }
 
+
 public function  registerStore(Request $request){
     $data["email"] =  "chikavi@hotmail.com";
     $data["title"] = "ORG| Esta interesado ".$request->shelter;

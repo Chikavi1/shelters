@@ -6,6 +6,7 @@ use App\Http\Controllers\RequestsController;
 use App\Http\Controllers\PetsController;
 use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TutorialsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,10 @@ Route::get('/', function () {
 Route::get('/dashboard',[HomeController::class, 'welcome'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/pre-register', [HomeController::class, 'preRegister'])->name('pre-register');
 Route::post('/pre-register', [HomeController::class, 'registerStore'])->name('preregister.store');
+
+
+Route::get('/tutorials',[TutorialsController::class, 'index'])->name('tutorials.index');
+Route::get('/tutorials/{id}',[TutorialsController::class, 'show'])->name('tutorials.show');
 
 
 Route::middleware('auth')->group(function () {

@@ -13,7 +13,7 @@
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://places.radi.pet/">
+        <meta property="og:url" content="http://org.radi.pet/">
         <meta property="og:title" content="Radi Pets Albergues">
         <meta property="og:description" content="Administrar tu albergue o refugio nunca ha sido tan fácil.
         ¡Únete a nuestra plataforma y simplifica tu trabajo! Gestiona las adopciones, voluntarios, donaciones y más en un solo lugar.">
@@ -21,7 +21,7 @@
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="http://places.radi.pet/">
+        <meta property="twitter:url" content="http://org.radi.pet/">
         <meta property="twitter:title" content="Radi Pets Albergues">
         <meta property="twitter:description" content="Administrar tu albergue o refugio nunca ha sido tan fácil.
         ¡Únete a nuestra plataforma y simplifica tu trabajo! Gestiona las adopciones, voluntarios, donaciones y más en un solo lugar.">
