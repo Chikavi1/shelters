@@ -46,7 +46,7 @@ class HomeController extends Controller
             'address'        => $request->get('address'),
             'latitude'       => $request->get('latitude'),
             'longitude'      => $request->get('longitude'),
-            'recovery_fee'      => $request->get('recovery_fee'),
+            'recovery_fee'   => $request->get('recovery_fee'),
             'address'        => $request->get('address'),
             'social_media'   => '{"facebook":"","instagram":""}',
             'cover'          => 'https://radi.pet/img/default.png',

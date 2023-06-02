@@ -61,13 +61,13 @@
                 @endif
                 <p class="mt-4">Facebook:</p>
                 @if($social)
-                    <p><br> <a class="font-bold underline" href="{{$social->facebook}}">{{$social->facebook}}</a>  </p><br>
+                    <p><br> <a target="_blank" class="font-bold underline" href="{{$social->facebook}}">{{$social->facebook}}</a>  </p><br>
                 @else
                     <p   class="text-red-600">Sin link de facebook</p>
                 @endif
                 <p>Instagram:</p>
                 @if($social)
-                    <p><br> <a class="font-bold underline" href="{{$social->instagram}}">{{$social->instagram}}</a> </p><br>
+                    <p><br> <a  target="_blank" class="font-bold underline" href="{{$social->instagram}}">{{$social->instagram}}</a> </p><br>
                 @else
                     <p class="text-red-600">Sin link de instagram</p>
                 @endif

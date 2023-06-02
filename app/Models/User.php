@@ -29,6 +29,7 @@ class User extends Authenticatable
         'address'        ,
         'latitude'       ,
         'longitude'      ,
+        'recovery_fee'   ,
         'address'        ,
         'social_media'   ,
         'cover'          ,
