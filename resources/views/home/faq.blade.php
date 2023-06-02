@@ -22,12 +22,12 @@ rel="stylesheet"
             </p>
           </div>
           <div class="flex items-center">
-            <a
+            {{-- <a
               href="/tutorials"
               class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
             >
               Tutoriales
-            </a>
+            </a> --}}
             <a href="https://www.radi.pet/contact" target="_blank" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Contacto</a>
           </div>
         </div>
@@ -50,7 +50,8 @@ rel="stylesheet"
             </p>
             <h5 class="mt-10 mb-3 font-semibold text-gray-900">¿Cómo puedo crear un perfil para mi mascota en Radi Pets?</h5>
             <p>
-              Para crear el perfil de tu mascota dirigite al apartado de "mis mascotas", selecciona la opcion de crear e ingresa la información solicitada, para más detalle sigue el siguiente <a class="font-bold text-purple-900" href="/tutorials/1">tutorial</a>.
+              Para crear el perfil de tu mascota dirigite al apartado de "mis mascotas", selecciona la opcion de crear e ingresa la información solicitada, proximamente agregaremos un tutorial de esto.
+               {{-- más detalle sigue el siguiente <a class="font-bold text-purple-900" href="/tutorials/1">tutorial</a>. --}}
             </p>
             <h5 class="mt-10 mb-3 font-semibold text-gray-900">¿Cuál es la información que debo incluir al crear el perfil de mi mascota?   </h5>
             <p>Al crear el perfil de tu mascota en Radi Pets, es recomendable incluir la siguiente información:
