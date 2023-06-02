@@ -8,6 +8,7 @@ use Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use GuzzleHttp\Client;
+use App\Models\Tutorials;
 
 
 class TutorialsController extends Controller
@@ -15,12 +16,15 @@ class TutorialsController extends Controller
 
     public function index()
     {
-        return view('tutorials.index');
+        $tutorials = Tutorials::all();
+        return view('tutorials.index',compact('tutorials'));
     }
 
     public function show($id)
     {
-        return view('tutorials.show');
+        $tutorial = Tutorials::find($id);
+        $steps = json_decode($tutorial->steps, true);
+        return view('tutorials.show',compact('tutorial','steps'));
 
     }
 

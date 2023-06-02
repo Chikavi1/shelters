@@ -28,7 +28,7 @@
             <div class="col-span-4 md:col-span-2  ">
                 {!! Form::open(['route' => ['requests.storeSign',["id" => $id]]], ['class' => 'p-6  flex items-center justify-center' ,'files' => true]) !!}
                                  <input type="hidden" id="sign" name="sign">
-                                <button type="submit" id="save-png"  class="w-1/2 px-2 py-2 rounded-lg bg-green-800 mt-2 text-white">Enviar Firma</button>
+                                <button type="submit" id="save-png"  class="w-full px-2 py-2 rounded-lg bg-green-800 mt-2 text-white">Enviar</button>
                 {!! Form::close() !!}
             </div>
         </div>

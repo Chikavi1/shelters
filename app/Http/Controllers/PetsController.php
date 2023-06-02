@@ -29,6 +29,7 @@ class PetsController extends Controller
 
 
         $image = 'https://radi-images.s3.us-west-1.amazonaws.com/pet-default.jpeg';
+
         if($request->get('base') && $request->get('base') != 'data:,'){
             $baseImage = $request->base;
             list($type, $baseImage) = explode(';', $baseImage);
@@ -42,11 +43,11 @@ class PetsController extends Controller
         }
 
         $pet = new Pets([
-            'name'              =>  $request->get('name'),
+            'name'              => ucfirst($request->get('name')),
             'photo'             => $image,
             'birthday'          => $request->get('birthday'),
-            'description'       => $request->get('description'),
-            'chronic_disease'   => $request->get('chronic_disease'),
+            'description'       => ucfirst($request->get('description')),
+            'chronic_disease'   =>  ucfirst($request->get('chronic_disease')),
             'gender'            => $request->get('gender'),
             'specie'            => $request->get('specie'),
             'sterelized'        => $request->get('sterilized'),

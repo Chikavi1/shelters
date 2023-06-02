@@ -45,56 +45,39 @@
                 <div class=" mb-6">
                     <p>Tutorial</p>
                   <h2 class=" mb-6 font-sans text-4xl md:text-5xl font-bold tracking-tight text-gray-900  sm:leading-none">
-                    ¿Como editar mi información?
+                    {{$tutorial->title}}
                   </h2>
                   <p class=" text-gray-700 text-lg">
-                    Te invitamos a descubrir cómo editar la información de tu albergue o refugio de una manera sencilla y práctica. <br><br> A continuación, encontrarás los siguientes pasos detallados para llevar a cabo esta tarea.             </p>
+                    {{$tutorial->subtitle}}
                 </div>
                 <div class="flex">
                   <div class="flex flex-col">
-                    <div class="text-lg font-semibold">3 min</div>
+                    <div class="text-lg font-semibold">{{$tutorial->time}} min</div>
                     <div class="text-sm text-gray-700">Tiempo estimado</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          @foreach($steps as $step => $s )
+            <div class="px-4 py-16 mx-auto   md:px-24 lg:px-8 lg:py-20">
+                <div class="grid gap-10 lg:grid-cols-2">
+                <div class="lg:pr-10">
+                    <h5 class="mb-4 text-4xl font-extrabold leading-none">
+                        Paso {{ $loop->index+1 }}
+                    </h5>
+                    <p class="mb-6 text-gray-900 text-xl">
+                        {!! $s['step'] !!}
+                    </p>
+                    <hr class="mb-5 border-gray-300" />
+                </div>
+                <div>
+                    <img class="mx-auto h-96 rounded shadow-lg sm:h-96" src="{{$s['image']}}" alt="" />
+                </div>
+                </div>
+            </div>
+          @endforeach
 
-        <div class="px-4 py-16 mx-auto   md:px-24 lg:px-8 lg:py-20">
-            <div class="grid gap-10 lg:grid-cols-2">
-            <div class="lg:pr-10">
-                <h5 class="mb-4 text-4xl font-extrabold leading-none">
-                    Paso 1
-                </h5>
-                <p class="mb-6 text-gray-900">
-                    Para editar la información de tu perfil, simplemente inicia sesión y sigue estos pasos: dirígete al menú superior y haz clic en el icono ubicado en la esquina derecha. A continuación, selecciona la opción "Perfil"
-
-                </p>
-                <hr class="mb-5 border-gray-300" />
-
-            </div>
-            <div>
-                <img class="mx-auto h-96 rounded shadow-lg sm:h-96" src="https://i.ibb.co/tZpF79D/1.png" alt="" />
-            </div>
-            </div>
-        </div>
-        <div class="px-4 py-16 mx-auto   md:px-24 lg:px-8 lg:py-20">
-            <div class="grid gap-10 lg:grid-cols-2">
-            <div class="lg:pr-10">
-                <h5 class="mb-4 text-4xl font-extrabold leading-none">
-                Paso 2
-                </h5>
-                <p class="mb-6 text-gray-900">
-                    En la siguiente pantalla se mostrará información relevante de tu perfil, como tu foto de perfil, nombre, redes sociales y enlaces de apoyo, como PayPal y tu lista de deseos de Amazon. También tendrás la opción de agregar tu información bancaria para permitir que las personas te realicen transferencias, entre otras funciones adicionales.
-                </p>
-                <hr class="mb-5 border-gray-300" />
-
-            </div>
-            <div>
-                <img class="mx-auto h-96 rounded shadow-lg sm:h-96" src="https://i.ibb.co/tZpF79D/1.png" alt="" />
-            </div>
-            </div>
-        </div>
 
     </div>
 </body>

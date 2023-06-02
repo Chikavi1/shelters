@@ -4,10 +4,10 @@
             <div class="text-xs uppercase text-gray-400 font-medium mb-6">
                 Empezando
             </div>
-            <a href="/terms" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="https://www.radi.pet/terms" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Términos y condiciones
             </a>
-            <a href="/privacy" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="https://www.radi.pet/privacy" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Politicas de privacidad
             </a>
 
@@ -89,7 +89,7 @@
             </div>
 
 
-            <a href="/contact" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="https://www.radi.pet/contact" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Contáctanos
             </a>
 

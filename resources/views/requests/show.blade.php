@@ -128,7 +128,7 @@
                             <img width="80" height="60" class="rounded-lg" src="{{$request->pets->photo}}" alt="image pet">
                         </span>
                         <div class="flex flex-col">
-                            <span class="ml-2 font-bold text-black text-md dark:text-white">
+                            <span class="ml-2 capital font-bold text-black text-md dark:text-white">
                                 {{$request->pets->name}}
                             </span>
                             <a href="/pets/{{$request->pets->id}}" target="_blank" class="ml-2 text-sm text-gray-500 dark:text-white">
@@ -223,7 +223,7 @@
 
                     @if($request->status != 2)
                         {!! Form::open(['route' => ['request.cancel',["id"=>$hash]]], ['class' => 'p-6  flex items-center justify-center' ,'files' => true]) !!}
-                        <button type="submit" class="py-2 px-4 text-red-800 w-full transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+                        <button type="submit" class="py-2 px-4 dark:text-yellow-700 text-red-800 w-full transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
                             Cancelar Solicitud
                         </button>
                         {!! Form::close() !!}

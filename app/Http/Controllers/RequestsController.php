@@ -206,7 +206,7 @@ class RequestsController extends Controller
         $pet->save();
         $request->save();
 
-        return redirect('/requests/'.$hash)->with('success', '¡¡Se adopto a la mascota!!');
+        return redirect('/requests/'.$hash)->with('success', '¡¡Se adoptó a la mascota!!');
     }
 
     public function generatePDF(string $hash,Request $request)

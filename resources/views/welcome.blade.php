@@ -125,7 +125,7 @@
       <div>
         <p class="mt-0 mb-3 font-semibold text-gray-900">¿Cómo me registro?</p>
         <p class="text-gray-600">
-            Para registrarte en nuestra plataforma, por favor envíanos un <a target="_blank" class="text-purple-500 font-bold" href="https://www.instagram.com/radipets">mensaje</a>  con la información de tu albergue o refugio. Nuestro equipo revisará la información para validar tu registro y te informaremos en cuanto tu cuenta esté activa. ¡Gracias por unirte a nuestra comunidad de adopción de mascotas!
+            Para registrarte en nuestra plataforma, por favor envíanos un <a target="_blank" class="text-purple-500 font-bold" href="https://www.instagram.com/radipets">mensaje</a>  con la información de tu albergue o refugio o ingresa al pre-registro <a href="/pre-register" class="font-bold text-purple-800">aquí</a>. Nuestro equipo revisará la información para validar tu registro y te informaremos en cuanto tu cuenta esté activa. ¡Gracias por unirte a nuestra comunidad de adopción de mascotas!
         </p>
       </div>
     </div>

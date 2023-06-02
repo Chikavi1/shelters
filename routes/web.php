@@ -30,6 +30,7 @@ Route::get('/', function () {
 Route::get('/dashboard',[HomeController::class, 'welcome'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/pre-register', [HomeController::class, 'preRegister'])->name('pre-register');
 Route::post('/pre-register', [HomeController::class, 'registerStore'])->name('preregister.store');
+Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 
 
 Route::get('/tutorials',[TutorialsController::class, 'index'])->name('tutorials.index');

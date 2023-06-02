@@ -77,6 +77,10 @@ public function preregister(){
     return view('pre-register');
 }
 
+public function faq(){
+    return view('home.faq');
+}
+
 
 public function  registerStore(Request $request){
     $data["email"] =  "chikavi@hotmail.com";
