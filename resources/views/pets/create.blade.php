@@ -108,7 +108,7 @@
                     <div class="dark:text-white text-gray-600">
                         <p class="font-medium text-lg">Ubicación *</p>
                         <p>Indica donde se encuentra la mascota</p>
-                        <p>( los usuarios que esten cerca podran ver el perfil de la mascota )</p>
+                        <p>(los usuarios que estén cerca podrán ver el perfil de la mascota)</p>
                     </div>
 
                     <div class="lg:col-span-2">
