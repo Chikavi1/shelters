@@ -35,7 +35,7 @@
                         @endif
                     </h2>
                     @if($pet->status == 2)
-                        <a href="/pets/{{$pet->id}}/edit" class=" bg-green-500 mt-24 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        <a href="/pets/{{$hash}}/edit" class=" bg-green-500 mt-24 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                             Editar
                         </a>
                     @endif

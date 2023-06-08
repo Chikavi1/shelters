@@ -81,7 +81,7 @@ class PetsController extends Controller
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
         $id = $hashids->decode($hash);
         $pet = Pets::findOrFail($id?$id[0]:0);
-        return view('pets.edit',compact('pet'));
+        return view('pets.edit',compact('pet','hash'));
     }
 
     public function update(Request $request, string $id)
