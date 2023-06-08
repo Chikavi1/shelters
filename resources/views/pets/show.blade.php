@@ -89,6 +89,9 @@
                                 </a>
                               </div>
                         </div>
+
+                        <a class="dark:text-white"  href="https://radi.pet/pet/{{hash}}" target="_blank">Ver en Radi Pets</a>
+
                         </div>
                     </div>
                     <div class="md:grid md:grid-cols-2  md:space-y-0 space-y-1 p-4 border-b">
