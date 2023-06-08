@@ -89,6 +89,9 @@ class PetsController extends Controller
 
         $pet = Pets::find($id);
 
+        $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
+        $hash = $hashids->decode($pet->id);
+
         if($request->get('base') && $request->get('base') != 'data:,'){
             $baseImage = $request->base;
             list($type, $baseImage) = explode(';', $baseImage);
@@ -118,7 +121,7 @@ class PetsController extends Controller
         $pet->color_necklace         = $request->get('color_necklace');
         $pet->weight                 = $request->get('weight');
         $pet->update();
-        return redirect('/pets/'.$id.'/edit')->with('success', 'Se ha actualizado correctamente.');
+        return redirect('/pets/'.$hash.'/edit')->with('success', 'Se ha actualizado correctamente.');
     }
 
     public function destroy(string $id)
