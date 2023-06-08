@@ -115,6 +115,18 @@
 
                     <div class="md:grid md:grid-cols-2  md:space-y-0 space-y-1 p-4 border-b">
                         <p class="text-gray-600 dark:text-white dark:font-bold">
+                            Genero
+                        </p>
+                        @if($pet->gender == 1)
+                        <p class="text-gray-500 dark:text-gray-400">Macho</p>
+                    @else
+                        <p class="text-gray-500 dark:text-gray-400">Hembra</p>
+                    @endif
+
+                    </div>
+
+                    <div class="md:grid md:grid-cols-2  md:space-y-0 space-y-1 p-4 border-b">
+                        <p class="text-gray-600 dark:text-white dark:font-bold">
                             Raza
                         </p>
                         <p class="text-gray-500 dark:text-gray-400" id="specie"></p>
