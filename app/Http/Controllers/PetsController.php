@@ -106,7 +106,7 @@ class PetsController extends Controller
             $pet->photo                  = $image;
         }
 
-        $pet->name                  = $request->get('name');
+        $pet->name                   = $request->get('name');
         $pet->birthday               = Carbon::parse($request->birthday);
         $pet->description            = $request->get('description');
         $pet->chronic_disease        = $request->get('chronic_disease');
@@ -116,10 +116,14 @@ class PetsController extends Controller
         $pet->specie                 = $request->get('specie');
         $pet->sterelized             = $request->get('sterelized');
         $pet->sterelized_date        = $request->get('sterelized_date');
-        $pet->breed                  = $request->get('breed');
+        if($request->get('breed')){
+            $pet->breed                  = $request->get('breed');
+        }
         $pet->size                   = $request->get('size');
         $pet->color_necklace         = $request->get('color_necklace');
         $pet->weight                 = $request->get('weight');
+
+
         $pet->update();
         return redirect('/pets/'.$hash.'/edit')->with('success', 'Se ha actualizado correctamente.');
     }

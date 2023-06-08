@@ -167,13 +167,13 @@
                             <div class="md:col-span-12"  id="divsize">
                                 <label class="dark:text-white " for="size">Tamaño</label>
 
-                                {!! Form::select('size', array('mn' => 'Mini', 'sm' => 'Pequeño','md' => 'Mediano','lg' => 'Grande','xl' => 'Extra Grande'), $pet->weight,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
+                                {!! Form::select('size', array('mn' => 'Mini', 'sm' => 'Pequeño','md' => 'Mediano','lg' => 'Grande','xl' => 'Extra Grande'), $pet->size,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
                             </div>
 
 
                             <div class="md:col-span-12" id="divneclacke">
                                 <label class="dark:text-white " for="neclacke_color">Collar color</label>
-                                {!! Form::select('neclacke_color', array('1' => 'Rojo (precaución)', '2' => 'Amarillo (Nervioso)','3' => 'Verde (Amigable)','4' => 'Naranja (No Amigable)','5' => 'Azul (Entrenado)','6'=> 'Blanco (Discapacidad)'), $pet->weight,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
+                                {!! Form::select('color_necklace', array('1' => 'Rojo (precaución)', '2' => 'Amarillo (Nervioso)','3' => 'Verde (Amigable)','4' => 'Naranja (No Amigable)','5' => 'Azul (Entrenado)','6'=> 'Blanco (Discapacidad)'), $pet->color_necklace,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
                             </div>
 
                             <div class="md:col-span-12" id="divweight">
