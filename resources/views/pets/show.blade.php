@@ -90,7 +90,7 @@
                               </div>
                         </div>
 
-                        <a class="dark:text-white"  href="https://radi.pet/pet/{{hash}}" target="_blank">Ver en Radi Pets</a>
+                        <a class="dark:text-white"  href="https://radi.pet/pet/{{$hash}}" target="_blank">Ver en Radi Pets</a>
 
                         </div>
                     </div>
