@@ -90,7 +90,7 @@ class PetsController extends Controller
         $pet = Pets::find($id);
 
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
-        $hash = $hashids->decode($pet->id);
+        $hash = $hashids->encode($pet->id);
 
         if($request->get('base') && $request->get('base') != 'data:,'){
             $baseImage = $request->base;
