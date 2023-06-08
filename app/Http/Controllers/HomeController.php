@@ -83,13 +83,13 @@ public function faq(){
 
 
 public function  registerStore(Request $request){
-    $data["email"] =  "chikavi@hotmail.com";
-    $data["title"] = "ORG| Esta interesado ".$request->shelter;
-    $data["body"]  = "Encargado ".$request->name;
-    $data["name"]  = $request->get('name');
-    $data["shelter"]  = $request->get('shelter');
+    $data["email"]      =  "radi.pet.service@gmail.com";
+    $data["title"]      = "ORG | Esta interesado ".$request->shelter;
+    $data["body"]       = "Encargado ".$request->name;
+    $data["name"]       = $request->get('name');
+    $data["shelter"]    = $request->get('shelter');
     $data["cellphone"]  = $request->get('cellphone');
-    $data["s_email"] = $request->get('email');
+    $data["s_email"]    = $request->get('email');
 
 
     Mail::send('mail.attetion-register', $data, function($message)use($data) {

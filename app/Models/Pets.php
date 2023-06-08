@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Hashids\Hashids;
 
 class Pets extends Model
 {
@@ -18,12 +19,12 @@ class Pets extends Model
             'description'      ,
             'chronic_disease'  ,
             'gender'           ,
-            'birthday'           ,
+            'birthday'          ,
             'specie'           ,
             'latitude',
             'longitude',
             'sterelized'       ,
-            'sterelized_date'   ,
+            'sterelized_date'  ,
             'breed'            ,
             'size'             ,
             'color_necklace'   ,
@@ -32,6 +33,10 @@ class Pets extends Model
             'status'            ,
     ];
 
+    public function setHiddenId(){
+        $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
+        return $hashids->encode($this->id);
+    }
 
     use HasFactory;
 }

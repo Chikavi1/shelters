@@ -1,5 +1,5 @@
 <x-app-layout>
-
+    @if(Auth::user()->id == $pet->id_organization)
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
@@ -51,13 +51,10 @@
 
                                 </div>
 
-
-
-
                                 <div class="md:col-span-5">
                                     <label class="dark:text-white " for="birthday">Fecha de nacimiento *</label>
                                     <input
-                                    value="2018-07-22"
+                                    value="{{ \Carbon\Carbon::createFromDate($pet->birthday)->format('Y-m-d')}}"
                                     type="date"
                                     min="2003-01-01"
                                     id="birthday"
@@ -149,9 +146,9 @@
                             <div class="md:col-span-12" id="divdatesterilized">
                                 <label class="dark:text-white " for="datesterilized">Fecha de esterilizacion</label>
                                 <input
-                                value="2018-07-22"
+                                value="{{ \Carbon\Carbon::createFromDate($pet->sterelized_date)->format('Y-m-d')}}"
                                 type="date"
-                                min="2018-01-01" max="2023-12-31"
+
                                 id="datesterilized"
                                 class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                 name="datesterilized"
@@ -199,7 +196,12 @@
             </div>
 
             {!! Form::close() !!}
-</x-app-layout>
+
+        @else
+            <h2 class="text-center text-3xl dark:text-white my-20">No tienes permisos para editar👀</h2>
+        @endif
+        </x-app-layout>
+
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>

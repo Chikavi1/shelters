@@ -8,6 +8,7 @@ use Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use Hashids\Hashids;
+use Carbon\Carbon;
 
 class PetsController extends Controller
 {
@@ -66,15 +67,20 @@ class PetsController extends Controller
         return redirect('/pets')->with('success', 'Se ha creado correctamente.');
     }
 
-    public function show(string $id)
+    public function show(string $hash)
     {
-        $pet = Pets::find($id);
-        return view('pets.show',compact('pet'));
+
+        $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
+        $id = $hashids->decode($hash);
+        $pet = Pets::findOrFail($id?$id[0]:0);
+        return view('pets.show',compact('pet','hash'));
     }
 
-    public function edit(string $id)
+    public function edit(string $hash)
     {
-        $pet = Pets::find($id);
+        $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
+        $id = $hashids->decode($hash);
+        $pet = Pets::findOrFail($id?$id[0]:0);
         return view('pets.edit',compact('pet'));
     }
 
@@ -97,13 +103,13 @@ class PetsController extends Controller
             $pet->photo                  = $image;
         }
 
-        $pet->name               = $request->get('name');
-        $pet->birthday               = $request->get('birthday');
+        $pet->name                  = $request->get('name');
+        $pet->birthday               = Carbon::parse($request->birthday);
         $pet->description            = $request->get('description');
         $pet->chronic_disease        = $request->get('chronic_disease');
         $pet->gender                 = $request->get('gender');
-        $pet->latitude                 = $request->get('latitude');
-        $pet->longitude                 = $request->get('longitude');
+        $pet->latitude               = $request->get('latitude');
+        $pet->longitude              = $request->get('longitude');
         $pet->specie                 = $request->get('specie');
         $pet->sterelized             = $request->get('sterelized');
         $pet->sterelized_date        = $request->get('sterelized_date');
