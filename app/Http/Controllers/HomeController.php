@@ -14,6 +14,7 @@ use App\Models\Requests;
 
 use Illuminate\Support\Facades\Hash;
 use Mail;
+use SEO;
 
 
 class HomeController extends Controller
