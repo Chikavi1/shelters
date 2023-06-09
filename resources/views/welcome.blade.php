@@ -11,6 +11,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
     {!! SEO::generate() !!}
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTX3KKS0FH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TTX3KKS0FH');
+</script>
+
 {{--
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">

@@ -2,6 +2,15 @@
 href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
 rel="stylesheet"
 />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTX3KKS0FH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TTX3KKS0FH');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 @if ($message = Session::get('success'))
