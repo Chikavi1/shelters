@@ -184,6 +184,7 @@ return [
         Yajra\DataTables\DataTablesServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
 
         /*
@@ -222,6 +223,7 @@ return [
             'PDF' => Barryvdh\DomPDF\Facade::class,//Add this code
             'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
             'Location' => 'Stevebauman\Location\Facades\Location',
+            'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
 
 

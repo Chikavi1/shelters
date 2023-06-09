@@ -23,9 +23,7 @@ if (App::environment('production')) {
     URL::forceScheme('https');
 }
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[HomeController::class, 'home'])->name('home');
 
 Route::get('/dashboard',[HomeController::class, 'welcome'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/pre-register', [HomeController::class, 'preRegister'])->name('pre-register');

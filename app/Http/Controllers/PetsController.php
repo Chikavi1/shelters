@@ -51,7 +51,7 @@ class PetsController extends Controller
             'chronic_disease'   =>  ucfirst($request->get('chronic_disease')),
             'gender'            => $request->get('gender'),
             'specie'            => $request->get('specie'),
-            'sterelized'        => $request->get('sterilized'),
+            'sterelized'        => $request->get('sterelized'),
             'sterelized_date'   => $request->get('datesterilized'),
             'breed'             => $request->get('breed'),
             'size'              => $request->get('size'),
