@@ -10,7 +10,8 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
-
+    {!! SEO::generate() !!}
+{{--
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="http://org.radi.pet/">
@@ -25,7 +26,7 @@
         <meta property="twitter:title" content="Radi Pets Albergues">
         <meta property="twitter:description" content="Administrar tu albergue o refugio nunca ha sido tan fácil.
         ¡Únete a nuestra plataforma y simplifica tu trabajo! Gestiona las adopciones, voluntarios, donaciones y más en un solo lugar.">
-        <meta property="twitter:image" content="{{ asset('img/default.png')}}">
+        <meta property="twitter:image" content="{{ asset('img/default.png')}}"> --}}
 
 
     <!-- Fonts -->
