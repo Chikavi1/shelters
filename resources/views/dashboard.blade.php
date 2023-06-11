@@ -1,3 +1,5 @@
+{!! SEO::generate() !!}
+
 <x-app-layout>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7789760036582954"
      crossorigin="anonymous"></script>

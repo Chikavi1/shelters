@@ -8,13 +8,19 @@ use Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use GuzzleHttp\Client;
-
+use SEO;
 
 class PeopleController extends Controller
 {
 
     public function create()
     {
+        SEO::setTitle('Usuarios | '.Auth::user()->name);
+        SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+        SEO::twitter()->setImage(asset('img/thumbnail.png'));
+        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::opengraph()->setUrl('https://org.radi.pet/');
+        SEO::setCanonical('https://org.radi.pet/');
         return view('people.create');
     }
 

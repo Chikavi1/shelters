@@ -64,7 +64,7 @@
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
 
 
-                                <div class="md:col-span-5">
+                                <div class="md:col-span-5 dark:text-white">
                                     <label for="email">Correo del adoptante*</label>
                                     <input
                                     type="email"
@@ -89,21 +89,21 @@
 
                 <div class="dark:bg-gray-800 bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                     <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                        <div class="dark:text-white text-gray-600">
-                            <p class="font-medium text-lg">Mascota</p>
+                        <div class="dark:text-white text-gray-600 dark:text-white">
+                            <p class="font-medium text-lg ">Mascota</p>
                             <p>Por favor, rellene todos los campos.</p>
                         </div>
 
                         <div class="lg:col-span-2">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
 
-                                <div class="md:col-span-5">
+                                <div class="md:col-span-5 dark:text-white">
                                     <label for="address">Mascota</label>
                                     <input
                                     value="{{ $request->pets->name }}"
                                     required type="text" name="pets" id="pets" class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50"  placeholder="" />
                                     <input required type="hidden" pattern="[0-9]{1,5}" name="pet_id" id="pet_id" class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50"  placeholder="" />
-                                    <p class="font-bold mt-4">Puedes crear una mascota <a target="_blank" class="text-purple-800 font-bold" href="/pets/create">aquí</a> </p>
+                                    <p class="font-bold mt-4 dark:text-white">Puedes crear una mascota <a target="_blank" class="text-purple-800 font-bold" href="/pets/create">aquí</a> </p>
 
                                 </div>
                             </div>
@@ -115,7 +115,7 @@
 
                     <div class="dark:bg-gray-800 bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                         <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                            <div class="dark:text-white text-gray-600">
+                            <div class="dark:text-white text-gray-600 ">
                                 <p class="font-medium text-lg">Verificación de identidad.</p>
                                 <p>Por favor, rellene todos los campos.</p>
                             </div>
@@ -168,7 +168,7 @@
                         </div>
 
                         <div class="lg:col-span-2">
-                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5 dark:text-white">
 
 
                                 <div class="md:col-span-5">
@@ -262,7 +262,7 @@
                                 <div id="map" style="width: 100%;height:20em"></div>
                             </div>
 
-                        <div class="md:col-span-5">
+                        <div class="md:col-span-5 dark:text-white">
                             <label for="address">Dirección Completa *</label>
                             <input
                             value="{{ $request->address }}"

@@ -9,18 +9,31 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use Hashids\Hashids;
 use Carbon\Carbon;
+use SEO;
 
 class PetsController extends Controller
 {
 
     public function index()
     {
+        SEO::setTitle('Mascotas | '.Auth::user()->name);
+        SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+        SEO::twitter()->setImage(asset('img/thumbnail.png'));
+        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::opengraph()->setUrl('https://org.radi.pet/');
+        SEO::setCanonical('https://org.radi.pet/');
         $pets = Pets::where('id_organization',Auth::user()->id)->orderBy('id', 'desc')->paginate(10);
         return view('pets.index',compact('pets'));
     }
 
     public function create()
     {
+        SEO::setTitle('Crear Mascota | '.Auth::user()->name);
+        SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+        SEO::twitter()->setImage(asset('img/thumbnail.png'));
+        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::opengraph()->setUrl('https://org.radi.pet/');
+        SEO::setCanonical('https://org.radi.pet/');
         return view('pets.create');
     }
 
@@ -69,10 +82,16 @@ class PetsController extends Controller
 
     public function show(string $hash)
     {
-
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
         $id = $hashids->decode($hash);
         $pet = Pets::findOrFail($id?$id[0]:0);
+        SEO::setTitle($pet->name.' | '.Auth::user()->name);
+        SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+        SEO::twitter()->setImage(asset('img/thumbnail.png'));
+        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::opengraph()->setUrl('https://org.radi.pet/');
+        SEO::setCanonical('https://org.radi.pet/');
+
         return view('pets.show',compact('pet','hash'));
     }
 
@@ -81,6 +100,12 @@ class PetsController extends Controller
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
         $id = $hashids->decode($hash);
         $pet = Pets::findOrFail($id?$id[0]:0);
+        SEO::setTitle('Editar '.$pet->name.' | '.Auth::user()->name);
+        SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+        SEO::twitter()->setImage(asset('img/thumbnail.png'));
+        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::opengraph()->setUrl('https://org.radi.pet/');
+        SEO::setCanonical('https://org.radi.pet/');
         return view('pets.edit',compact('pet','hash'));
     }
 

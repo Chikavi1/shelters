@@ -11,12 +11,18 @@ use Illuminate\View\View;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
-
+use SEO;
 
 class ProfileController extends Controller
 {
 
         public function editar(){
+            SEO::setTitle('Perfil | '.Auth::user()->name);
+            SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+            SEO::twitter()->setImage(asset('img/thumbnail.png'));
+            SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+            SEO::opengraph()->setUrl('https://org.radi.pet/');
+            SEO::setCanonical('https://org.radi.pet/');
             $social = json_decode(Auth::user()->social_media);
             return view('profile.editar',compact('social'));
         }

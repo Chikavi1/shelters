@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{!! SEO::generate() !!}
 
 <link
 href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"

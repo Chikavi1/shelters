@@ -86,10 +86,22 @@ class HomeController extends Controller
     }
 
 public function preregister(){
+    SEO::setTitle('Registrate en Radi Pets para albergues');
+    SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+    SEO::twitter()->setImage(asset('img/thumbnail.png'));
+    SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+    SEO::opengraph()->setUrl('https://org.radi.pet/');
+    SEO::setCanonical('https://org.radi.pet/');
     return view('pre-register');
 }
 
 public function faq(){
+    SEO::setTitle('Preguntas Frecuentes en Radi Pets');
+    SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+    SEO::twitter()->setImage(asset('img/thumbnail.png'));
+    SEO::setDescription('Aquí encontrarás respuestas a las preguntas más comunes sobre nuestra plataforma dedicada sa ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+    SEO::opengraph()->setUrl('https://org.radi.pet/');
+    SEO::setCanonical('https://org.radi.pet/');
     return view('home.faq');
 }
 
@@ -129,6 +141,14 @@ public function email(){
 }
 
     public function welcome(){
+
+        SEO::setTitle('Dashboard | '.Auth::user()->name);
+        SEO::opengraph()->addImage(asset('img/thumbnail.png'));
+        SEO::twitter()->setImage(asset('img/thumbnail.png'));
+        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::opengraph()->setUrl('https://org.radi.pet/');
+        SEO::setCanonical('https://org.radi.pet/');
+
         $pets =    Pets::where('id_organization',Auth::user()->id)->where('status',2)->get()->count();
         $requests = Requests::where('id_organization',Auth::user()->id)->where('status',1)->get()->count();
         return view('dashboard',compact('pets','requests'));

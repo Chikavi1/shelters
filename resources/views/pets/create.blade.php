@@ -269,6 +269,7 @@ $(document).ready(function(){
             $("#divdatesterilized").removeClass('hidden');
         }else{
             $("#divdatesterilized").addClass('hidden');
+            $("#datesterilized").removeAttr('required');
         }
    });
 

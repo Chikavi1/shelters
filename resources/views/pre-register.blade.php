@@ -2,6 +2,9 @@
 href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
 rel="stylesheet"
 />
+{!! SEO::generate() !!}
+
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTX3KKS0FH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
