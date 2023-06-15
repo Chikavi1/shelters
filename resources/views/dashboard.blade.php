@@ -11,7 +11,7 @@
     </x-slot>
 
 
-  
+
 
 
     <div class="py-12">
@@ -57,27 +57,90 @@
             </div>
         </div>
 
-        <div class="max-w-8xl mx-auto mt-4 sm:px-6 ">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                 <h2 class="font-bold text-xl">Bienvenido a Radi Pets Shelters</h2>
-                  <p>Estás usando una versión beta de nuestra plataforma.</p><br>
-                  <p>Por el momento, utilizamos anuncios para poder pagar los servidores y recursos para crear esta plataforma, agradecemos tu compresion y esperemos pronto no mostrar anuncios.</p> <br>
-                  <p>Si encuentras algún  un error o se te ocurre una funcionalidad para la plataforma, puedes mandarnos un mensaje y de paso seguirnos en <a class="font-bold text-xl" href="https://www.instagram.com/radipets/" target="_blank">@radipets</a> o <a  class="font-bold text-xl" target="_blank" href="https://www.facebook.com/radipetsmx">fb/radipetsmx</a>  para ver las novedades en la plataforma.</p>
+        <div class="grid grid-cols-12 gap-4 ">
+            <div class="md:col-start-2 p-8 col-span-12 md:col-span-4 m-2 bg-white text-gray-700 dark:text-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="p-6 text-gray-900 dark:text-gray-100">
+                     <h2 class="font-bold text-xl">Bienvenido a Radi Pets Shelters</h2>
+                      <p>Estás usando una versión beta de nuestra plataforma.</p><br>
+                      <p>Por el momento, utilizamos anuncios para poder pagar los servidores y recursos para crear esta plataforma, agradecemos tu compresion y esperemos pronto no mostrar anuncios.</p> <br>
+                      <p>Si encuentras algún  un error o se te ocurre una funcionalidad para la plataforma, puedes mandarnos un mensaje y de paso seguirnos en <a class="font-bold text-xl" href="https://www.instagram.com/radipets/" target="_blank">@radipets</a> o <a  class="font-bold text-xl" target="_blank" href="https://www.facebook.com/radipetsmx">fb/radipetsmx</a>  para ver las novedades en la plataforma.</p>
+                    </div>
                 </div>
+            </div>
+
+            <div    class="md:col-span-3 p-8   col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="md:col-start-2 md:col-span-10 col-">
+                    <ins class="adsbygoogle mx-auto"
+                    style="display:block"
+                    data-ad-client="ca-pub-7789760036582954"
+                    data-ad-slot="8479090430"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                </div>
+
+            </div>
+            <div class="md:col-span-3 p-8  col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
+                <h2 class="text-2xl my-2">Tutoriales</h2>
+                <h1>Proximamente</h1>
+                <p>En caso de alguna duda, mándanos un <a class="font-bold underline" target="_blank" href="https://api.whatsapp.com/send?phone=5213317642715&text=Hola%2C%20tengo%20una%20duda">mensaje</a> </p>
+                {{-- <ul>
+                    <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
+                        <div class="flex items-center justify-start text-sm">
+                            <span class="mx-4">
+                                01
+                            </span>
+                                <span class=" text-gray-400">
+
+                                    ¿Cómo funcionan la plataforma?
+                            </span>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
+                        <div class="flex items-center justify-start text-sm">
+                            <span class="mx-4">
+                                02
+                            </span>
+                                <span class=" text-gray-400">
+                                    ¿Cómo crear una solicitud?
+                            </span>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
+                        <div class="flex items-center justify-start text-sm">
+                            <span class="mx-4">
+                                03
+                            </span>
+                                <span class=" text-gray-400">
+                                    ¿Cómo crear el perfil de una mascota?
+                            </span>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
+                        <div class="flex items-center justify-start text-sm">
+                            <span class="mx-4">
+                                04
+                            </span>
+                                <span class=" text-gray-400">
+                                    ¿Cómo editar mis datos?
+                            </span>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
+                        <div class="flex items-center justify-start text-sm">
+                            <span class="mx-4">
+                                05
+                            </span>
+                                <span class=" text-gray-400">
+                                    ¿Cómo reportar un error?
+                            </span>
+                        </div>
+                    </li>
+                </ul> --}}
+
             </div>
         </div>
 
-        <div class="grid grid-cols-12 gap-4">
-            <div class="md:col-start-2 md:col-span-10 col-">
-                <ins class="adsbygoogle mx-auto"
-                style="display:block"
-                data-ad-client="ca-pub-7789760036582954"
-                data-ad-slot="8479090430"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            </div>
-        </div>
 
     </div>
 
