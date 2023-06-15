@@ -52,7 +52,7 @@
                 <h2 class="text-2xl my-2 mb-16" style="color:#af9177"><a href="/profile">Perfil</a></h2>
                 <a href="/profile"  class=" bg-transparent  hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded">
                     Editar
-
+                </a>
 
             </div>
         </div>
