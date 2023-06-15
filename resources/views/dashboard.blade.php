@@ -77,6 +77,7 @@
                     data-ad-format="auto"
                     data-full-width-responsive="true"></ins>
             </div>
+            
             <div class="md:col-span-3 p-8  col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
                 <h2 class="text-2xl my-2">Tutoriales</h2>
                 <h1>Proximamente</h1>

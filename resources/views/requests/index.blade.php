@@ -17,7 +17,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7789760036582954"
      crossorigin="anonymous"></script>
 
-     <div class="grid grid-cols-12 gap-4">
+     {{-- <div class="grid grid-cols-12 gap-4">
         <div class="md:col-start-2 md:col-span-10 col-">
             <ins class="adsbygoogle"
                 style="display:block;"
@@ -26,7 +26,7 @@
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
         </div>
-    </div>
+    </div> --}}
 
 
 
