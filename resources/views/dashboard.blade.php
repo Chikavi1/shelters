@@ -20,7 +20,7 @@
 
         <div class="grid grid-cols-12 gap-4 ">
             <div style="background: #c5cbff;color:#7d7e9f" class="md:col-start-2 p-8 col-span-12 md:col-span-4 m-2 bg-white text-gray-700 dark:text-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <h2 class="text-2xl my-2">Solicitudes</h2>
+                <h2 class="text-2xl my-2"><a href="/requests">Solicitudes </a></h2>
                 <small>Pendientes</small>
                 <h2 class=" text-2xl mb-4 font-bold">
                     <a href="/requests">
@@ -32,7 +32,7 @@
                 </a>
             </div>
             <div  style="background: #c9f1e6;color:#65847b"  class="md:col-span-3 p-8  col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
-                <h2 class="text-2xl my-2">Mascotas</h2>
+                <h2 class="text-2xl my-2"><a href="/pets">Mascotas</a></h2>
                 <small>En adopción</small>
                 <h2 class="mb-4 text-2xl font-bold">
                     <a href="/pets">
@@ -49,10 +49,10 @@
 
             </div>
             <div style="background: #ffd7ae;"  class="md:col-span-3 p-8   col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
-                <h2 class="text-2xl my-2 mb-16" style="color:#af9177">Perfil</h2>
+                <h2 class="text-2xl my-2 mb-16" style="color:#af9177"><a href="/profile">Perfil</a></h2>
                 <a href="/profile"  class=" bg-transparent  hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded">
                     Editar
-                </a>
+
 
             </div>
         </div>
