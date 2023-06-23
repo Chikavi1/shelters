@@ -136,7 +136,7 @@
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
                                 <div class="md:col-span-12">
                                 <label class="dark:text-white " for="gender">Genero *</label>
-                                {!! Form::select('gender', array('2' => 'Hembra', '1' => 'Macho'), null,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
+                                {!! Form::select('gender', array('1' => 'Macho', '2' => 'Hembra'), null,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
                                 </div>
 
 

@@ -196,9 +196,9 @@
                                             <td class="px-4 py-4 text-sm whitespace-nowrap">
                                                 <div>
                                                     @if($pet->gender == 1)
-                                                        <p class="text-gray-500 dark:text-gray-400">Hembra</p>
-                                                    @else
                                                         <p class="text-gray-500 dark:text-gray-400">Macho</p>
+                                                    @else
+                                                        <p class="text-gray-500 dark:text-gray-400">Hembra</p>
                                                     @endif
                                                 </div>
                                             </td>

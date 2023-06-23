@@ -518,13 +518,13 @@
                                             </dt>
                                             <dd class="mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2">
                                                 @if($request->users->gender)
-                                                <span>
-                                                    Hombre
-                                                </span>
+                                                    <span>
+                                                        Hombre
+                                                    </span>
                                                 @else
-                                                <span>
-                                                    Mujer
-                                                </span>
+                                                    <span>
+                                                        Mujer
+                                                    </span>
                                                 @endif
                                             </dd>
                                         </div>
