@@ -155,12 +155,12 @@
                             </div>
 
                             <div class="md:col-span-12">
-                                <label class="dark:text-white " for="sterilized">Cuenta de banco </label>
+                                <label class="dark:text-white " for="sterelized">Cuenta de banco </label>
                                 <input type="text" maxlength="20" placeholder="Ingresa la cuenta de banco" name="bank_account" id="bank_account" class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="{{Auth::user()->bank_account}}" />
                             </div>
 
                             <div class="md:col-span-12">
-                                <label class="dark:text-white " for="sterilized">Tarjeta de banco </label>
+                                <label class="dark:text-white " for="sterelized">Tarjeta de banco </label>
                                 <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" type="text" maxlength="16" placeholder="Ingresa la Tarjeta de banco" name="bank_card" id="bank_card" class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="{{Auth::user()->bank_card}}" />
                             </div>
 

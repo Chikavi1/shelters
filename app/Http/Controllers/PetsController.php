@@ -65,7 +65,7 @@ class PetsController extends Controller
             'gender'            => $request->get('gender'),
             'specie'            => $request->get('specie'),
             'sterelized'        => $request->get('sterelized'),
-            'sterelized_date'   => $request->get('datesterilized'),
+            'sterelized_date'   => $request->get('datesterelized'),
             'breed'             => $request->get('breed'),
             'size'              => $request->get('size'),
             'latitude'          => $request->get('latitude')?$request->get('latitude'):Auth::user()->latitude,

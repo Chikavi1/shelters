@@ -127,31 +127,20 @@
                                     <label class="dark:text-white " for="specie">Especie *</label>
                                     {!! Form::select('specie', array('1' => 'Gato', '2' => 'Perro'), $pet->specie,['id'=>'specie','class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
                                 </div>
-
                             <div class="md:col-span-12">
-                                <label class="dark:text-white " for="sterilized">Mascota esterilizada?</label>
-                                <select
-                                    required
-                                    name="sterilized" id="sterilized"
-                                    class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50">
-                                    <option value="1">
-                                        Sí
-                                    </option>
-                                    <option value="0">
-                                        No
-                                    </option>
-                                </select>
+                                <label class="dark:text-white " for="sterelized">Mascota esterilizada?</label>
+                                {!! Form::select('sterelized', array('1' => 'Sí',null => 'No'), $pet->sterelized,['id'=>'sterelized','class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
                             </div>
 
-                            <div class="md:col-span-12" id="divdatesterilized">
-                                <label class="dark:text-white " for="datesterilized">Fecha de esterilizacion</label>
+                            <div class="md:col-span-12" id="divdatesterelized">
+                                <label class="dark:text-white " for="datesterelized">Fecha de esterilizacion</label>
                                 <input
                                 value="{{ \Carbon\Carbon::createFromDate($pet->sterelized_date)->format('Y-m-d')}}"
                                 type="date"
 
-                                id="datesterilized"
+                                id="datesterelized"
                                 class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                                name="datesterilized"
+                                name="datesterelized"
                                 required
                                 placeholder="Fecha de nacimiento"/>
                             </div>
@@ -253,11 +242,11 @@ $(document).ready(function(){
    });
 
 
-   $("#sterilized").on('change',function(e){
+   $("#sterelized").on('change',function(e){
         if(e.target.value == 1){
-            $("#divdatesterilized").removeClass('hidden');
+            $("#divdatesterelized").removeClass('hidden');
         }else{
-            $("#divdatesterilized").addClass('hidden');
+            $("#divdatesterelized").addClass('hidden');
         }
    });
 

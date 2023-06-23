@@ -112,7 +112,7 @@
 
 
                                 <div class="md:col-span-5">
-                                    <label class="dark:text-white " for="sterilized">Género</label>
+                                    <label class="dark:text-white " for="sterelized">Género</label>
                                     <select
                                         required
                                         name="gender" id="gender"

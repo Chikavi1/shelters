@@ -146,10 +146,10 @@
                                 </div>
 
                             <div class="md:col-span-12">
-                                <label class="dark:text-white " for="sterilized">Mascota esterilizada?</label>
+                                <label class="dark:text-white " for="sterelized">Mascota esterilizada?</label>
                                 <select
                                     required
-                                    name="sterilized" id="sterilized"
+                                    name="sterelized" id="sterelized"
                                     class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50">
                                     <option value="1">
                                         Sí
@@ -160,13 +160,13 @@
                                 </select>
                             </div>
 
-                            <div class="md:col-span-12" id="divdatesterilized">
-                                <label class="dark:text-white " for="datesterilized">Fecha de esterilizacion</label>
+                            <div class="md:col-span-12" id="divdatesterelized">
+                                <label class="dark:text-white " for="datesterelized">Fecha de esterilizacion</label>
                                 <input
                                 type="date"
-                                id="datesterilized"
+                                id="datesterelized"
                                 class="dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                                name="datesterilized"
+                                name="datesterelized"
                                 required
                                 placeholder="Fecha de nacimiento"/>
                             </div>
@@ -264,12 +264,12 @@ $(document).ready(function(){
    });
 
 
-   $("#sterilized").on('change',function(e){
+   $("#sterelized").on('change',function(e){
         if(e.target.value == 1){
-            $("#divdatesterilized").removeClass('hidden');
+            $("#divdatesterelized").removeClass('hidden');
         }else{
-            $("#divdatesterilized").addClass('hidden');
-            $("#datesterilized").removeAttr('required');
+            $("#divdatesterelized").addClass('hidden');
+            $("#datesterelized").removeAttr('required');
         }
    });
 
