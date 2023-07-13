@@ -29,7 +29,8 @@ Route::get('/dashboard',[HomeController::class, 'welcome'])->middleware(['auth',
 Route::get('/pre-register', [HomeController::class, 'preRegister'])->name('pre-register');
 Route::post('/pre-register', [HomeController::class, 'registerStore'])->name('preregister.store');
 Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
-
+Route::get('/encode-rg/{id}', [HomeController::class, 'encoderg'])->name('enc');
+Route::get('/decode-rg/{id}', [HomeController::class, 'decoderg'])->name('dec');
 
 Route::get('/tutorials',[TutorialsController::class, 'index'])->name('tutorials.index');
 Route::get('/tutorials/{id}',[TutorialsController::class, 'show'])->name('tutorials.show');

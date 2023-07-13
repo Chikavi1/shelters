@@ -11,6 +11,7 @@ use Illuminate\View\View;
 use App\Models\User;
 use App\Models\Pets;
 use App\Models\Requests;
+use Hashids\Hashids;
 
 use Illuminate\Support\Facades\Hash;
 use Mail;
@@ -25,6 +26,18 @@ class HomeController extends Controller
         }else{
             abort(404);
         }
+    }
+
+    public function encoderg($hash){
+        $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
+        $response = $hashids->encode($hash);
+        return $response;
+    }
+
+    public function decoderg($hash){
+        $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
+        $response = $hashids->decode($hash);
+        return $response[0];
     }
 
     public function store(Request $request){
