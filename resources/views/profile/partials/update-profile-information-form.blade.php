@@ -147,7 +147,7 @@
     <p id="p1" class="max-w-[40ch] text-sm text-gray-500" id="text">
         https://www.radi.pet/org/{{Auth::user()->setHiddenId()}}
     </p>
-    <button onclick="copyToClipboard('#p1')" class="mt-2 border-purple-600 bg-purple-600 hover:bg-purple-700 hover:border-purple-700 text-white font-bold py-2 px-4 rounded-full">
+    <button type="button" onclick="copyToClipboard('#p1')" class="mt-2 border-purple-600 bg-purple-600 hover:bg-purple-700 hover:border-purple-700 text-white font-bold py-2 px-4 rounded-full">
         Copiar
     </button>
     </div>
@@ -202,3 +202,17 @@
 
     </form>
 </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script>
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($.trim($(element).text())).select();
+        console.log($(element).text())
+        document.execCommand("copy");
+        $temp.remove();
+        $("#modalShare").addClass('hidden');
+    }
+</script>
