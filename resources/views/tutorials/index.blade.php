@@ -62,4 +62,34 @@
             </div>
 
     </section>
+    <div class="md:p-4 mt-6  md:mx-40">
+        <div class="bg-gray-100 p-4 md:p-8 rounded-xl">
+            <div class="grid grid-cols-12 gap-3">
+                <div class="col-span-12 md:col-span-6 md:p-4">
+                    <h2 class="text-2xl md:text-4xl font-bold ">¿Cómo registrar una mascota en Radi Org?</h2>
+                    <p class="mt-4">Descubre cómo añadir una mascota a tu perfil en Radi Org! Sigue nuestros simples pasos para subir el perfil de tu compañero peludo en esta emocionante comunidad y sé de en adopción!</p>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <iframe class="w-11/12 md:w-full h-80 md:h-96 rounded-xl" src="https://www.youtube.com/embed/yb09TsfY8I4?si=fN2kYY-rMH_D2pDt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="md:p-4 mt-6  md:mx-40">
+        <div class="bg-gray-100 p-4 md:p-8 rounded-xl">
+            <div class="grid grid-cols-12 gap-3">
+                <div class="col-span-12 md:col-span-6 md:p-4">
+                    <h2 class="text-2xl md:text-4xl font-bold ">¿Cómo crear una solicitud de adopción en Radi Org?</h2>
+                    <p class="mt-4">Aprende a solicitar adopción en Radi Org. Sigue nuestros simples pasos para completar el proceso de adopción. ¡Descubre lo fácil que es!</p>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <iframe class="w-11/12 md:w-full h-80 md:h-96 rounded-xl"  src="https://www.youtube.com/embed/urEgAynb74o?si=AmSqzUOpZL-0F6SP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
 </body>
