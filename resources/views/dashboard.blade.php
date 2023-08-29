@@ -64,7 +64,6 @@
                      <h2 class="font-bold text-xl">Bienvenido a Radi Pets Shelters</h2>
                       <p>Estás usando una versión beta de nuestra plataforma.</p><br>
                       <p>Por el momento, utilizamos anuncios para poder pagar los servidores y recursos para crear esta plataforma, agradecemos tu compresion y esperemos pronto no mostrar anuncios.</p> <br>
-                      <p>Si encuentras algún  un error o se te ocurre una funcionalidad para la plataforma, puedes mandarnos un mensaje y de paso seguirnos en <a class="font-bold text-xl" href="https://www.instagram.com/radipets/" target="_blank">@radipets</a> o <a  class="font-bold text-xl" target="_blank" href="https://www.facebook.com/radipetsmx">fb/radipetsmx</a>  para ver las novedades en la plataforma.</p>
                     </div>
                 </div>
             </div>
@@ -76,11 +75,13 @@
                     data-ad-slot="8479090430"
                     data-ad-format="auto"
                     data-full-width-responsive="true"></ins> --}}
+                    <p>Si encuentras algún  un error o se te ocurre una funcionalidad para la plataforma, puedes mandarnos un mensaje y de paso seguirnos en <a class="font-bold text-xl" href="https://www.instagram.com/radipets/" target="_blank">@radipets</a> o <a  class="font-bold text-xl" target="_blank" href="https://www.facebook.com/radipetsmx">fb/radipetsmx</a>  para ver las novedades en la plataforma.</p>
+
             </div>
 
             <div class="md:col-span-3 p-8  col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
                 <h2 class="text-2xl my-2">Tutoriales</h2>
-                <h1>Proximamente</h1>
+                <h1 style="margin: 2em 0em;font-weight: bold;text-decoration:underline ;" class="font-bold underline"><a href="/tutorials">Ir a tutoriales</a></h1>
                 <p>En caso de alguna duda, mándanos un <a class="font-bold underline" target="_blank" href="https://api.whatsapp.com/send?phone=5213317642715&text=Hola%2C%20tengo%20una%20duda">mensaje</a> </p>
                 {{-- <ul>
                     <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
