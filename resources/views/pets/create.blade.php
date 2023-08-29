@@ -128,7 +128,7 @@
                 <div class="dark:bg-gray-800 bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                     <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                         <div class="dark:text-white text-gray-600">
-                            <p class="font-medium text-lg">Beneficios</p>
+                            <p class="font-medium text-lg">Información básica</p>
                             <p>Por favor, rellene todos los campos.</p>
                         </div>
 
