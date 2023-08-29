@@ -3,7 +3,7 @@
     crossorigin="anonymous"></script>
 
 
-    <div class="grid grid-cols-12 gap-4">
+    {{-- <div class="grid grid-cols-12 gap-4">
         <div class="md:col-start-2 md:col-span-10 col-">
             <ins class="adsbygoogle mx-auto"
             style="display:block"
@@ -12,7 +12,7 @@
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
         </div>
-    </div>
+    </div> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
@@ -135,7 +135,7 @@
                         <div class="lg:col-span-2">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
                                 <div class="md:col-span-12">
-                                <label class="dark:text-white " for="gender">Genero *</label>
+                                <label class="dark:text-white " for="gender">Género *</label>
                                 {!! Form::select('gender', array('1' => 'Macho', '2' => 'Hembra'), null,['class' => 'dark:bg-gray-700 dark:text-white h-10 border mt-1 rounded px-4 w-full bg-gray-50']); !!}
                                 </div>
 

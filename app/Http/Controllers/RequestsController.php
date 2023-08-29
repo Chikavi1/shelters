@@ -159,9 +159,18 @@ class RequestsController extends Controller
     {
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
         $id = $hashids->decode($hash);
-        $request = Requests::findOrFail($id?$id[0]:0);
-        $request->update();
-        return redirect('/requests/')->with('success', 'Se ha editado correctamente.');
+        dd($request->all());
+
+        $requestPet = Requests::findOrFail($id?$id[0]:0);
+        $respuestas = array(
+            '0' => $request->response1,
+            '1'  => $request->response2,
+            '2' => $request->response3,
+            '3' => $request->response4,
+            '4' => $request->response5);
+          $interview = json_encode($respuestas);
+        $requestPet->update();
+        return redirect('/requests/'.$hash)->with('success', 'Se ha editado correctamente.');
 
     }
 

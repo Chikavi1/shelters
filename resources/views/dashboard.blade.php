@@ -70,14 +70,14 @@
             </div>
 
             <div  class="md:col-span-3 p-8   col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <ins class="adsbygoogle mx-auto"
+                    {{-- <ins class="adsbygoogle mx-auto"
                     style="display:block"
                     data-ad-client="ca-pub-7789760036582954"
                     data-ad-slot="8479090430"
                     data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
+                    data-full-width-responsive="true"></ins> --}}
             </div>
-            
+
             <div class="md:col-span-3 p-8  col-span-12 bg-white m-2 dark:bg-gray-800 text-gray-700 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
                 <h2 class="text-2xl my-2">Tutoriales</h2>
                 <h1>Proximamente</h1>

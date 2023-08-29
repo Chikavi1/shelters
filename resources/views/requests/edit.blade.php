@@ -47,7 +47,7 @@
 </div> --}}
 
 
-    {!! Form::open(['route' => ['requests.update',$request->id],'method' => 'put'], ['class' => 'p-6  flex items-center justify-center' ,'files' => true]) !!}
+    {!! Form::open(['route' => ['requests.update',$request->setHiddenId()],'method' => 'put'], ['class' => 'p-6  flex items-center justify-center' ,'files' => true]) !!}
         <div class="container max-w-screen-lg mx-auto">
             <div>
                 <h2 class="font-semibold text-xl dark:text-white text-gray-600">Crear solicitud de adopción</h2>
@@ -180,8 +180,7 @@
                                      name="response1"
                                      rows="3"
                                      required
-                                     cols="30">{{$request->interview[0]}}
-                                    </textarea>
+                                     cols="30">{{$request->interview[0]}}</textarea>
 
                                 </div>
 
@@ -194,8 +193,7 @@
                                      name="response2"
                                      rows="3"
                                      required
-                                     cols="30">{{$request->interview[1]}}
-                                    </textarea>
+                                     cols="30">{{$request->interview[1]}}</textarea>
 
 
                                 </div>
@@ -208,8 +206,7 @@
                                      name="response3"
                                      rows="3"
                                      required
-                                     cols="30">{{$request->interview[2]}}
-                                    </textarea>
+                                     cols="30">{{$request->interview[2]}}</textarea>
                                 </div>
 
                                 <div class="md:col-span-5">
@@ -220,8 +217,7 @@
                                      name="response4"
                                      rows="3"
                                      required
-                                     cols="30">{{$request->interview[3]}}
-                                    </textarea>
+                                     cols="30">{{$request->interview[3]}}</textarea>
 
 
                                 </div>
@@ -265,9 +261,12 @@
                         <div class="md:col-span-5 dark:text-white">
                             <label for="address">Dirección Completa *</label>
                             <input
-                            value="{{ $request->address }}"
+                            value="{{ $request->address}}"
                             required type="text" name="address" id="address" class=" h-10 border mt-1 rounded px-4 w-full dark:bg-gray-800 dark:text-white bg-gray-50" value="" placeholder="Dirección (calle con número, colonia, CP, ciudad, estado)" />
                         </div>
+
+                        <input type="hidden" value="{{ $request->latitude}}" name="latitude">
+                        <input type="hidden" value="{{ $request->longitude}}" name="longitude">
 
 
 

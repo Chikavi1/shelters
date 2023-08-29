@@ -80,7 +80,7 @@
 
 
 
-    <div class="grid grid-cols-12 gap-4">
+    {{-- <div class="grid grid-cols-12 gap-4">
         <div class="md:col-start-2 md:col-span-10 col-">
             <ins class="adsbygoogle mx-auto"
             style="display:block"
@@ -89,7 +89,7 @@
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
         </div>
-    </div>
+    </div> --}}
 
 @php
     $steps = 0;
@@ -131,7 +131,7 @@
                             <span class="ml-2 capital font-bold text-black text-md dark:text-white">
                                 {{$request->pets->name}}
                             </span>
-                            <a href="/pets/{{$request->pets->id}}" target="_blank" class="ml-2 text-sm text-gray-500 dark:text-white">
+                            <a href="/pets/{{$request->pets->setHiddenId()}}" target="_blank" class="ml-2 text-sm text-gray-500 dark:text-white">
                                 Ver más
                             </a>
                         </div>

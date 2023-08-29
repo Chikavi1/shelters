@@ -14,7 +14,7 @@
     crossorigin="anonymous"></script>
 
 
-    <div class="grid grid-cols-12 gap-4">
+    {{-- <div class="grid grid-cols-12 gap-4">
         <div class="md:col-start-2 md:col-span-10 col-">
             <ins class="adsbygoogle mx-auto"
             style="display:block"
@@ -23,7 +23,7 @@
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
         </div>
-    </div>
+    </div> --}}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
