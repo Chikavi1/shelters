@@ -68,11 +68,16 @@
                          Firma
                         </h2>
 
-
                         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
                           Es importante poner la firma del encargado del albergue/refugio para generar el contrato y el certificado de adopción.
                         </p>
+
+                        @if(Auth::user()->sign)
                         <img src="{{Auth::user()->sign}}" alt="firma">
+                        @else
+                        <h2>Necesitas ingresar tu firma</h2>
+                        <a href="profile/sign" class="text-right text-white font-bold underline">Ingresar</a>
+                        @endif
                     </header>
                 </div>
             </div>
