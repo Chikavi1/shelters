@@ -25,7 +25,7 @@ class RequestsController extends Controller
         SEO::setTitle('Solicitudes | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         $requests = Requests::where('id_organization',Auth::user()->id)->orderBy('id', 'desc')->paginate(20);
@@ -37,7 +37,7 @@ class RequestsController extends Controller
         SEO::setTitle('Crear Solicitudes | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         return view('requests.create');
@@ -126,7 +126,7 @@ class RequestsController extends Controller
         SEO::setTitle('Solicitud #'.$hash);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
@@ -146,7 +146,7 @@ class RequestsController extends Controller
         SEO::setTitle('Editar Solicitud #'.$hash);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         if($request->interview){
@@ -159,7 +159,6 @@ class RequestsController extends Controller
     {
         $hashids = new Hashids(ENV('HASH_ID'),6,'ABCEIU1234567890');
         $id = $hashids->decode($hash);
-        dd($request->all());
 
         $requestPet = Requests::findOrFail($id?$id[0]:0);
         $respuestas = array(
@@ -168,7 +167,7 @@ class RequestsController extends Controller
             '2' => $request->response3,
             '3' => $request->response4,
             '4' => $request->response5);
-          $interview = json_encode($respuestas);
+        $interview = json_encode($respuestas);
         $requestPet->update();
         return redirect('/requests/'.$hash)->with('success', 'Se ha editado correctamente.');
 

@@ -18,7 +18,7 @@ class PeopleController extends Controller
         SEO::setTitle('Usuarios | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         return view('people.create');

@@ -84,7 +84,7 @@
   </head>
   <body>
     <div style="color: #000000; display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden">
-        En Radi Pets, nos apasiona conectar a las mascotas necesitadas con hogares amorosos y comprometidos. Nuestra misión es brindar apoyo y visibilidad a los albergues y refugios, facilitando el proceso de adopción y promoviendo el bienestar animal.
+        En Radi Pets, nos apasiona conectar a las mascotas necesitadas con hogares amorosos y comprometidos. Nuestra misión es brindar apoyo y visibilidad a las organizaciones y refugios, facilitando el proceso de adopción y promoviendo el bienestar animal.
     </div>
 
     <!-- Preheader white space hack -->
@@ -129,7 +129,7 @@
 
                                         <tr>
                                           <td class="text22" align="left" style="color: #c6efd7 !important; font-size: 22px; font-weight: normal; line-height: 1.28; padding: 29px 0 0; text-align: left">
-                                            Nuestra misión es brindar apoyo y visibilidad a los albergues y refugios, facilitando el proceso de adopción y promoviendo el bienestar animal.                                          </td>
+                                            Nuestra misión es brindar apoyo y visibilidad a las organizaciones y refugios, facilitando el proceso de adopción y promoviendo el bienestar animal.                                          </td>
                                         </tr>
                                         <tr>
                                           <td align="left" style="padding-top: 32px">

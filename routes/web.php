@@ -7,6 +7,7 @@ use App\Http\Controllers\PetsController;
 use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TutorialsController;
+use App\Http\Controllers\SorteosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,10 +32,21 @@ Route::post('/pre-register', [HomeController::class, 'registerStore'])->name('pr
 Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 Route::get('/encode-rg/{id}', [HomeController::class, 'encoderg'])->name('enc');
 Route::get('/decode-rg/{id}', [HomeController::class, 'decoderg'])->name('dec');
+Route::get('/volunteers', [HomeController::class, 'volunteers'])->name('volunteers');
+Route::get('/volunteers-list', [HomeController::class, 'volunteersindex'])->name('volunteersindex');
+Route::get('/register-company', [HomeController::class, 'registercompany'])->name('registercompany');
+Route::get('/register-users', [HomeController::class, 'registeruser'])->name('registeruser');
+
+Route::get('/benefits', [HomeController::class, 'benefits'])->name('benefits');
+
 
 Route::get('/tutorials',[TutorialsController::class, 'index'])->name('tutorials.index');
 Route::get('/tutorials/{id}',[TutorialsController::class, 'show'])->name('tutorials.show');
 
+Route::get('/sorteos',[SorteosController::class,'index'])->name('sorteos.index');
+Route::get('/sorteos/{id}',[SorteosController::class,'show'])->name('sorteos.show');
+Route::get('/privacy',[SorteosController::class,'privacy'])->name('sorteos.privacy');
+Route::get('/verify',[SorteosController::class,'verify'])->name('sorteos.verify');
 
 Route::middleware('auth')->group(function () {
     Route::resource('requests', RequestsController::class);

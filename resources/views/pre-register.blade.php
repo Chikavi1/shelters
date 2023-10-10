@@ -116,7 +116,7 @@ rel="stylesheet"
         </svg>
         <div>
           <h2 class="text-xl font-medium text-purple-700">Primer plataforma para albergues y refugios</h2>
-          <p class="mt-1 text-gray-700">Radi Pets es la primera plataforma desarrollada para los albergues.</p>
+          <p class="mt-1 text-gray-700">Radi Pets es la primera plataforma desarrollada para las organizaciones.</p>
         </div>
       </div>
       <div class="flex space-x-3">

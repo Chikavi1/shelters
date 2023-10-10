@@ -19,7 +19,7 @@ class PetsController extends Controller
         SEO::setTitle('Mascotas | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         $pets = Pets::where('id_organization',Auth::user()->id)->orderBy('id', 'desc')->paginate(10);
@@ -31,7 +31,7 @@ class PetsController extends Controller
         SEO::setTitle('Crear Mascota | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         return view('pets.create');
@@ -88,7 +88,7 @@ class PetsController extends Controller
         SEO::setTitle($pet->name.' | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
 
@@ -103,7 +103,7 @@ class PetsController extends Controller
         SEO::setTitle('Editar '.$pet->name.' | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         return view('pets.edit',compact('pet','hash'));

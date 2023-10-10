@@ -74,8 +74,8 @@ class HomeController extends Controller
             ]);
 
         $data["email"] =  $request->get('email');
-        $data["title"] = "Bienvenido a Radi Pets para Albergues";
-        $data["body"]  = "Bienvenido a Radi Pets para Albergues";
+        $data["title"] = "Bienvenido a Radi Pets para Organizaciones";
+        $data["body"]  = "Bienvenido a Radi Pets para Organizaciones";
 
             Mail::send('mail.welcome', $data, function($message)use($data) {
             $message->to($data["email"])
@@ -88,10 +88,10 @@ class HomeController extends Controller
     }
 
     public function home(){
-        SEO::setTitle('Radi Pets para albergues o refugios');
+        SEO::setTitle('Radi Pets para Organizaciones o refugios');
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
         return view('welcome');
@@ -99,20 +99,42 @@ class HomeController extends Controller
     }
 
 public function preregister(){
-    SEO::setTitle('Registrate en Radi Pets para albergues');
+    SEO::setTitle('Registrate en Radi Pets para Organizaciones');
     SEO::opengraph()->addImage(asset('img/thumbnail.png'));
     SEO::twitter()->setImage(asset('img/thumbnail.png'));
-    SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+    SEO::setDescription('Plataforma para ayudar a las organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
     SEO::opengraph()->setUrl('https://org.radi.pet/');
     SEO::setCanonical('https://org.radi.pet/');
     return view('pre-register');
 }
 
+public function volunteers(){
+    return view('home.volunteers');
+}
+
+public function volunteersindex(){
+    return view('home.volunteersindex');
+}
+
+public function benefits(){
+    return view('home.benefits');
+}
+
+public function registercompany(){
+    return view('home.register-company');
+}
+
+public function registeruser(){
+    return view('home.register-users');
+}
+
+
+
 public function faq(){
     SEO::setTitle('Preguntas Frecuentes en Radi Pets');
     SEO::opengraph()->addImage(asset('img/thumbnail.png'));
     SEO::twitter()->setImage(asset('img/thumbnail.png'));
-    SEO::setDescription('Aquí encontrarás respuestas a las preguntas más comunes sobre nuestra plataforma dedicada sa ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+    SEO::setDescription('Aquí encontrarás respuestas a las preguntas más comunes sobre nuestra plataforma dedicada sa ayudar a las Organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
     SEO::opengraph()->setUrl('https://org.radi.pet/');
     SEO::setCanonical('https://org.radi.pet/');
     return view('home.faq');
@@ -141,8 +163,8 @@ public function  registerStore(Request $request){
 public function email(){
     // return view('mail.welcome');
     $data["email"] =  'chikavi10@gmail.com';
-    $data["title"] = "Bienvenido a Radi Pets para Albergues";
-    $data["body"]  = "Bienvenido a Radi Pets para Albergues";
+    $data["title"] = "Bienvenido a Radi Pets para Organizaciones";
+    $data["body"]  = "Bienvenido a Radi Pets para Organizaciones";
 
 
 
@@ -158,7 +180,7 @@ public function email(){
         SEO::setTitle('Dashboard | '.Auth::user()->name);
         SEO::opengraph()->addImage(asset('img/thumbnail.png'));
         SEO::twitter()->setImage(asset('img/thumbnail.png'));
-        SEO::setDescription('Plataforma para ayudar a los albergues o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
+        SEO::setDescription('Plataforma para ayudar a las Organizaciones o refugios a gestionar sus adopciones, perfiles de mascotas y más.');
         SEO::opengraph()->setUrl('https://org.radi.pet/');
         SEO::setCanonical('https://org.radi.pet/');
 

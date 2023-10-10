@@ -46,7 +46,7 @@ rel="stylesheet"
                 Al comunicar el error o la información incorrecta, proporciona detalles específicos sobre el problema que has encontrado y, si es posible, incluye capturas de pantalla o ejemplos que ayuden a ilustrar la situación. Esto permitirá al equipo de Radi Pets investigar y resolver el problema de manera más eficiente.
                 <br><br>
 
-                Recuerda que tu contribución al informar sobre errores o posibles mejoras es importante para garantizar que Radi Pets ofrezca la mejor experiencia posible tanto para los albergues como para los posibles adoptantes. <br><br>
+                Recuerda que tu contribución al informar sobre errores o posibles mejoras es importante para garantizar que Radi Pets ofrezca la mejor experiencia posible tanto para las organizaciones como para los posibles adoptantes. <br><br>
                 Radi Pets valora el feedback y la participación de los usuarios para mejorar continuamente la plataforma.
             </p>
             <h5 class="mt-10 mb-3 font-semibold text-gray-900">¿Cómo puedo crear un perfil para mi mascota en Radi Pets?</h5>
