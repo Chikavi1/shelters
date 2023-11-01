@@ -199,7 +199,7 @@ rel="stylesheet"
 
             </div>
 
-            <div id="step2"  >
+            {{-- <div id="step2"  >
                 <div class="col-span-6">
                     <p class="my-2 font-bold ">Paso 2 de 2</p>
                 </div>
@@ -299,7 +299,7 @@ rel="stylesheet"
                       </div>
                 </div>
 
-            </div>
+            </div> --}}
         </div>
       </main>
     </div>

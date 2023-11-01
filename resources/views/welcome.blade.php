@@ -4,6 +4,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {!! SEO::generate() !!}
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTX3KKS0FH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -50,18 +52,13 @@
 
         <div class="relative flex items-center justify-between">
           <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-            <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-              <rect x="3" y="1" width="7" height="12"></rect>
-              <rect x="3" y="17" width="7" height="6"></rect>
-              <rect x="14" y="1" width="7" height="6"></rect>
-              <rect x="14" y="11" width="7" height="12"></rect>
-            </svg>
-            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">ORG</span>
+
+            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Radi ORG</span>
           </a>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Organizaciones</a></li>
-            <li><a href="/volunteers" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Voluntarios</a></li>
-            <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Ayudar</a></li>
+            <li><a href="/volunteers" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Casas puentes</a></li>
+            {{-- <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Ayudar</a></li> --}}
 
             <li>
               <a
@@ -70,7 +67,7 @@
                 aria-label="Sign up"
                 title="Sign up"
               >
-                Ingresar
+                Apoyar
               </a>
             </li>
           </ul>
@@ -135,12 +132,11 @@
     <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 
         <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-        Administra las adopciones de tu<span class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline"> albergue</span> en un solo lugar.
+            Únete al  <span class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline">cambio </span> en la vida de las mascota.
       </h1>
       <p class="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
-        Utiliza nuestras herramientas para llegar a más personas.
-    </p>
-      <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
+        Utiliza nuestra plataforma y descubre las herramientas que ofrecemos para colaborar en la mejora de la calidad de vida de las mascotas.    </p>
+      {{-- <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
         @if (Route::has('login'))
             @auth
             <a href="{{ url('/dashboard') }}" class="text-white bg-purple-800 px-4 py-2 rounded-md font-bold text-2xl inline-flex items-center justify-center w-full mb-2 btn btn-primary btn-lg sm:w-auto sm:mb-0" >
@@ -155,74 +151,59 @@
             </a>
             @endauth
         @endif
-
-
-      </div>
+      </div> --}}
     </div>
-    <div class="w-full mx-auto mt-20 text-center md:w-10/12">
+    {{-- <div class="w-full mx-auto mt-20 text-center md:w-10/12">
       <img  class="w-72 mx-auto" src="{{ asset('img/landing.png')}}" alt="software screenshot" class="w-full rounded-lg shadow-2xl" />
+    </div> --}}
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="grid gap-8 row-gap-5 md:grid-cols-2">
+        <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+          <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
+
+            <div class="flex flex-col justify-between flex-grow">
+              <div>
+                <h6 class="mb-2 font-semibold leading-5">
+                 Organizaciones
+                </h6>
+                <p class="mb-2 text-sm text-gray-900">
+                    Si eres una organización, albergue, refugio o una persona dedicada a la adopción responsable, te invitamos a unirte a nuestra plataforma de forma gratuita. En ella, podrás crear perfiles de mascotas disponibles para adopción y gestionar las solicitudes de adopción, todo en un mismo lugar.
+                </p>
+              </div>
+              <a href="/" aria-label="" class="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+          <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
+
+            <div class="flex flex-col justify-between flex-grow">
+              <div>
+                <h6 class="mb-2 font-semibold leading-5">
+                  Casas puentes
+              </h6>
+                <p class="mb-2 text-sm text-gray-900">
+                   Conviértete en casa puente o un hogar temporal y contribuye al bienestar de las fundaciones necesitadas. Tu participación puede marcar la diferencia en la vida de una mascota.                </p>
+              </div>
+              <a href="/volunteers" aria-label="" class="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
 
 
 
-  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div class="grid gap-8 row-gap-5 md:grid-cols-2">
-      <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
-        <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-        <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-        <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-        <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-        <div class="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
-          <div class="mb-6 mr-6 lg:mb-0">
-            <div class="flex items-center justify-center w-20 h-20 rounded-full bg-indigo-50 lg:w-32 lg:h-32">
-              <svg class="w-16 h-16 text-deep-purple-accent-400 lg:w-20 lg:h-20" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
-          </div>
-          <div class="flex flex-col justify-between flex-grow">
-            <div>
-              <h6 class="mb-2 font-semibold leading-5">
-               Organizaciones
-              </h6>
-              <p class="mb-2 text-sm text-gray-900">
-                Cheese on toast airedale the big cheese. Danish fontina cheesy grin airedale danish fontina taleggio the big cheese macaroni cheese port-salut.
-              </p>
-            </div>
-            <a href="/" aria-label="" class="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
-        <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-        <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-        <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-        <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-        <div class="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
-          <div class="mb-6 mr-6 lg:mb-0">
-            <div class="flex items-center justify-center w-20 h-20 rounded-full bg-indigo-50 lg:w-32 lg:h-32">
-              <svg class="w-16 h-16 text-deep-purple-accent-400 lg:w-20 lg:h-20" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
-          </div>
-          <div class="flex flex-col justify-between flex-grow">
-            <div>
-              <h6 class="mb-2 font-semibold leading-5">
-                Voluntarios
-            </h6>
-              <p class="mb-2 text-sm text-gray-900">
-                A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear. We never had the chance to.
-              </p>
-            </div>
-            <a href="/volunteers" aria-label="" class="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <section class="px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2">

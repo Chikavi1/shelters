@@ -6,23 +6,17 @@ rel="stylesheet"
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
 
     <div class="relative flex items-center justify-between">
       <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-        <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-          <rect x="3" y="1" width="7" height="12"></rect>
-          <rect x="3" y="17" width="7" height="6"></rect>
-          <rect x="14" y="1" width="7" height="6"></rect>
-          <rect x="14" y="11" width="7" height="12"></rect>
-        </svg>
-        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">ORG</span>
+
+        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Radi ORG</span>
       </a>
       <ul class="flex items-center hidden space-x-8 lg:flex">
         <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Organizaciones</a></li>
-        <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Voluntarios</a></li>
-        <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Ayudar</a></li>
+        <li><a href="/volunteers" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Casas puentes</a></li>
+        {{-- <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Ayudar</a></li> --}}
 
         <li>
           <a
@@ -31,7 +25,7 @@ rel="stylesheet"
             aria-label="Sign up"
             title="Sign up"
           >
-            Ingresar
+            Apoyar
           </a>
         </li>
       </ul>
@@ -92,8 +86,33 @@ rel="stylesheet"
   </div>
 
 
-
 <section class="px-4  mx-auto max-w-7xl">
+
+    <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
+
+        <h1 class="mt-20 mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+            Registrate como un hogar temporal
+      </h1>
+      <p class="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
+        Utiliza nuestra plataforma y descubre las herramientas que ofrecemos para colaborar en la mejora de la calidad de vida de las mascotas.    </p>
+        <a href="{{ url('/dashboard') }}" class="text-white bg-purple-800 px-4 py-2 rounded-md font-bold text-2xl inline-flex items-center justify-center w-full mb-2 btn btn-primary btn-lg sm:w-auto sm:mb-0" >
+            Registrarme
+          </a>
+      {{-- <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
+        @if (Route::has('login'))
+            @auth
+            @else
+            <a href="{{ route('login') }}" class="text-white mt-4 bg-purple-800 px-4 py-2 rounded-md font-bold text-2xl inline-flex items-center justify-center w-full mb-2 btn btn-primary btn-lg sm:w-auto sm:mb-0" >
+                Ingresar
+            </a>
+            <a href="{{ route('pre-register') }}" class="text-white mt-4 bg-green-800 px-4 py-2 rounded-md font-bold text-2xl inline-flex items-center justify-center w-full mb-2 btn btn-primary btn-lg sm:w-auto sm:mb-0" >
+                Pre Registro
+            </a>
+            @endauth
+        @endif
+      </div> --}}
+    </div>
+
     <div class="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
       <div>
         <h2 class="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Conecta con una organización local</h2>
