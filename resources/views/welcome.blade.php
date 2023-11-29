@@ -56,11 +56,11 @@
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Radi ORG</span>
           </a>
           <ul class="flex items-center hidden space-x-8 lg:flex">
-            <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Organizaciones</a></li>
+            <li><a href="/org" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Organizaciones</a></li>
             <li><a href="/volunteers" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Casas puentes</a></li>
             {{-- <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Ayudar</a></li> --}}
 
-            <li>
+            {{-- <li>
               <a
                 href="/"
                 class="inline-flex text-purple-700 items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
@@ -69,7 +69,7 @@
               >
                 Apoyar
               </a>
-            </li>
+            </li> --}}
           </ul>
           <!-- Mobile menu -->
           <div class="lg:hidden">
@@ -132,7 +132,7 @@
     <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 
         <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-            Únete al  <span class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline">cambio </span> en la vida de las mascota.
+            Únete al  <span class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline">cambio </span> en la vida de las mascotas.
       </h1>
       <p class="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
         Utiliza nuestra plataforma y descubre las herramientas que ofrecemos para colaborar en la mejora de la calidad de vida de las mascotas.    </p>
@@ -156,7 +156,7 @@
     {{-- <div class="w-full mx-auto mt-20 text-center md:w-10/12">
       <img  class="w-72 mx-auto" src="{{ asset('img/landing.png')}}" alt="software screenshot" class="w-full rounded-lg shadow-2xl" />
     </div> --}}
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div class="grid gap-8 row-gap-5 md:grid-cols-2">
         <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
           <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
@@ -165,8 +165,11 @@
           <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
           <div class="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
 
-            <div class="flex flex-col justify-between flex-grow">
-              <div>
+              <a href="/org" aria-label="" class="inline-flex items-center text-sm transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              <div class="flex flex-col justify-between flex-grow">
+                  <div>
+                    <i class="fa-solid fa-heart text-4xl text-red-800"></i>
+
                 <h6 class="mb-2 font-semibold leading-5">
                  Organizaciones
                 </h6>
@@ -174,8 +177,9 @@
                     Si eres una organización, albergue, refugio o una persona dedicada a la adopción responsable, te invitamos a unirte a nuestra plataforma de forma gratuita. En ella, podrás crear perfiles de mascotas disponibles para adopción y gestionar las solicitudes de adopción, todo en un mismo lugar.
                 </p>
               </div>
-              <a href="/" aria-label="" class="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Ver más</a>
+                Ver más
             </div>
+        </a>
           </div>
         </div>
         <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
@@ -185,16 +189,19 @@
           <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
           <div class="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
 
+              <a href="/bridge" aria-label="" class="inline-flex items-center text-sm transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
             <div class="flex flex-col justify-between flex-grow">
-              <div>
+                <div>
+                  <i class="fa-solid fa-house -mt-8 text-4xl text-green-800"></i>
                 <h6 class="mb-2 font-semibold leading-5">
                   Casas puentes
               </h6>
                 <p class="mb-2 text-sm text-gray-900">
                    Conviértete en casa puente o un hogar temporal y contribuye al bienestar de las fundaciones necesitadas. Tu participación puede marcar la diferencia en la vida de una mascota.                </p>
               </div>
-              <a href="/volunteers" aria-label="" class="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Ver más</a>
+              Ver más
             </div>
+              </a>
           </div>
         </div>
       </div>
@@ -206,7 +213,7 @@
 
 
 
-  <section class="px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2">
+  {{-- <section class="px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2">
     <h1 class="mb-12 text-xl font-bold text-left md:text-3xl md:text-center">Preguntas Frecuentes</h1>
     <div class="flex items-start justify-start mb-12">
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="flex-none w-6 h-6 mr-4 text-gray-700" aria-hidden="true">
@@ -280,7 +287,7 @@
 
       </div>
     </div>
-  </section>
+  </section> --}}
 
 
   {{-- <iframe style="width: 100%;" height="800" src="https://www.artsteps.com/embed/6445761285f767ac04b9d3fa/560/315" frameborder="0" allowfullscreen></iframe> --}}

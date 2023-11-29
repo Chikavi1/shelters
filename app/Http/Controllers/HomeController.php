@@ -124,6 +124,10 @@ public function registercompany(){
     return view('home.register-company');
 }
 
+public function org(){
+    return view('home.org');
+}
+
 public function registeruser(){
     return view('home.register-users');
 }

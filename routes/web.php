@@ -25,6 +25,7 @@ if (App::environment('production')) {
 }
 
 Route::get('/',[HomeController::class, 'home'])->name('home');
+Route::get('/org',[HomeController::class, 'org'])->name('org');
 
 Route::get('/dashboard',[HomeController::class, 'welcome'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/pre-register', [HomeController::class, 'preRegister'])->name('pre-register');
@@ -32,7 +33,7 @@ Route::post('/pre-register', [HomeController::class, 'registerStore'])->name('pr
 Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 Route::get('/encode-rg/{id}', [HomeController::class, 'encoderg'])->name('enc');
 Route::get('/decode-rg/{id}', [HomeController::class, 'decoderg'])->name('dec');
-Route::get('/volunteers', [HomeController::class, 'volunteers'])->name('volunteers');
+Route::get('/bridge', [HomeController::class, 'volunteers'])->name('volunteers');
 Route::get('/volunteers-list', [HomeController::class, 'volunteersindex'])->name('volunteersindex');
 Route::get('/register-company', [HomeController::class, 'registercompany'])->name('registercompany');
 Route::get('/register-users', [HomeController::class, 'registeruser'])->name('registeruser');

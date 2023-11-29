@@ -30,6 +30,14 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         {{-- <script src="../../resources/js/app.js"> </script> --}}
     </head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             @include('layouts.navigation')
