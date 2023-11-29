@@ -73,9 +73,7 @@
           </ul>
           <!-- Mobile menu -->
           <div class="lg:hidden">
-            <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50">
-             <img src="../" alt="">
-            </button>
+
             <!-- Mobile menu dropdown
             <div class="absolute top-0 left-0 w-full">
               <div class="p-5 bg-white border rounded shadow-sm">
