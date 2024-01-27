@@ -1,4 +1,5 @@
-@include('layouts.guest')
+@include('layouts.nav')
+
 
 <section class="px-4 mx-auto max-w-7xl">
 
@@ -39,7 +40,9 @@
           <p class="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
               Al unirte como voluntario en Casa Puente, puedes disfrutar de descuentos exclusivos en negocios asociados y otros beneficios especiales. ¡Contribuye y recibe recompensas mientras ayudas a quienes lo necesitan!
           </p>
-          <a href="/benefits" class="w-full btn btn-dark btn-lg sm:w-auto font-bold text-green-800 text-2xl">Mirar beneficios</a>
+          <p class="text-center">
+              <a style="text-align: center !important;" href="/benefits" class="btn btn-dark btn-lg sm:w-auto text-center font-bold text-green-800 text-xl">Mira beneficios</a>
+          </p>
         </div>
         <div class="w-full h-72 mb-44 ">
           <img class="rounded-lg" src="https://i.ibb.co/MpGpx3h/Blue-Modern-Debit-Card-Promotion-Facebook-Ad.png" alt="">
@@ -246,7 +249,7 @@
           class="flex items-center justify-between w-full py-4 pr-1 font-semibold text-left text-gray-800 outline-none hover:text-primary focus:text-primary focus:outline-none"
           role="button"
           aria-controls="faq3"
-          aria-expanded="false"
+          aria-expandefd="false"
         >
             ¿Hay algún costo asociado con el uso de la plataforma para las casas puentes o organizaciones?
         </button>
