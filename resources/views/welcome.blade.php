@@ -4,10 +4,10 @@
 <section class="px-4 py-6 mx-auto max-w-7xl">
     <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 
-        <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+        <h1 class="lg:mt-12 mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
             Únete al  <span class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline">cambio </span> en la vida de las mascotas.
       </h1>
-      <p class="px-0  text-lg text-gray-600 md:text-xl lg:px-24">
+      <p class="px-0  text-lg text-gray-600 md:text-xl lg:mt-12 lg:px-24">
         Utiliza nuestra plataforma y descubre las herramientas que ofrecemos para colaborar en la mejora de la calidad de vida de las mascotas.    </p>
       {{-- <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
         @if (Route::has('login'))
@@ -29,7 +29,7 @@
     {{-- <div class="w-full mx-auto mt-20 text-center md:w-10/12">
       <img  class="w-72 mx-auto" src="{{ asset('img/landing.png')}}" alt="software screenshot" class="w-full rounded-lg shadow-2xl" />
     </div> --}}
-    <div class="px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  py-6">
+    <div class="lg:mt-12 px-4 rounded-md mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  py-6">
       <div class="grid gap-8 row-gap-5 md:grid-cols-2">
         <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
           <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
@@ -41,23 +41,22 @@
               <a href="/org" aria-label="" class="inline-flex items-center text-sm transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
               <div class="flex flex-col justify-between flex-grow">
                   <div>
-                    <i class="fa-solid fa-heart text-4xl text-red-800"></i>
-
-                <h6 class="mb-2 font-semibold leading-5">
+                    <img class="rounded-md w-full"  src="https://i.ibb.co/sm0s04d/pexels-photo-12195429.jpg" alt="">
+                <h3 class="mb-2 font-semibold text-xl mt-4 leading-5">
                  Organizaciones
-                </h6>
+                </h3>
                 <p class="mb-2 text-sm text-gray-900">
                     Si eres una organización, albergue, refugio o una persona dedicada a la adopción responsable, te invitamos a unirte a nuestra plataforma de forma gratuita. En ella, podrás crear perfiles de mascotas disponibles para adopción y gestionar las solicitudes de adopción, todo en un mismo lugar.
                 </p>
               </div>
-              <p class="font-bold text-green-800">
+              <p class="font-bold text-green-800 text-xl text-center mt-4">
                   Ver más
                 </p>
             </div>
         </a>
           </div>
         </div>
-        <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+        <div class="rounded-md relative p-px overflow-hidden transition duration-300 transform border shadow-sm hover:scale-105 group hover:shadow-xl">
           <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
           <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
@@ -67,14 +66,14 @@
               <a href="/bridge" aria-label="" class="inline-flex items-center text-sm transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
             <div class="flex flex-col justify-between flex-grow">
                 <div>
-                  <i class="fa-solid fa-house md:-mt-8 text-4xl text-green-800"></i>
-                <h6 class="mb-2 font-semibold leading-5">
+                    <img class="rounded-md w-full object-cover"  src="https://images.pexels.com/photos/6643660/pexels-photo-6643660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3 class="mb-2 font-semibold text-xl mt-4 leading-5">
                   Casas puentes
-              </h6>
+              </h3>
                 <p class="mb-2 text-sm text-gray-900">
                    Conviértete en casa puente o un hogar temporal y contribuye al bienestar de las fundaciones necesitadas. Tu participación puede marcar la diferencia en la vida de una mascota.                </p>
               </div>
-              <p class="font-bold text-green-800">
+              <p class="font-bold text-green-800 text-xl text-center mt-4">
                 Ver más
               </p>
             </div>

@@ -29,7 +29,7 @@
           >
             Iniciar sesión
         </a>
-          <a href="/register" aria-label="" class="inline-flex items-center font-semibold text-white transition-colors duration-200 hover:text-deep-purple-accent-700">Registrarme</a>
+          <a href="https://api.whatsapp.com/send/?phone=523317642715&text=%C2%A1Hola%21+Me+interesa+registrarme+gratis+a+la+plataforma+de+Organizaciones+de+Radi+Pets&type=phone_number&app_absent=0" aria-label="" class="inline-flex items-center font-semibold text-white transition-colors duration-200 hover:text-deep-purple-accent-700">Registrarme</a>
         </div>
       </div>
     </div>
@@ -132,7 +132,7 @@ Moderniza tu proceso de solicitud de adopción trasladándolo al ámbito digital
         </p>
         <div class="mb-10 text-center md:mb-16 lg:mb-20">
           <a
-            href="/"
+            href="https://api.whatsapp.com/send/?phone=523317642715&text=%C2%A1Hola%21+Me+interesa+registrarme+gratis+a+la+plataforma+de+Organizaciones+de+Radi+Pets&type=phone_number&app_absent=0"
             class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-green-800 transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
           >
             Registrarme
@@ -173,7 +173,7 @@ Moderniza tu proceso de solicitud de adopción trasladándolo al ámbito digital
     <div class="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
       <img
         class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-        src="https://i.ibb.co/NyB0W8Z/tabla-fondo-radi-pets.png"
+        src="https://i.ibb.co/wJ1z6Zd/29621e6c-3b8d-4efd-9adc-666ad5bdff12.jpg  "
          alt=""
       />
     </div>
@@ -199,7 +199,7 @@ Moderniza tu proceso de solicitud de adopción trasladándolo al ámbito digital
                 ¿Cómo puedo registrar mi organización en Radi Pets?
             </p>
             <p class="text-gray-700">
-                Para registrar tu organización en Radi Pets de forma gratuita, simplemente ingresa <a href="/register">aquí</a>  y sigue los pasos sencillos de registro. Proporciona la información necesaria sobre tu entidad y ¡listo!
+                Para registrar tu organización en Radi Pets de forma gratuita, simplemente ingresa <a href="https://api.whatsapp.com/send/?phone=523317642715&text=%C2%A1Hola%21+Me+interesa+registrarme+gratis+a+la+plataforma+de+Organizaciones+de+Radi+Pets&type=phone_number&app_absent=0">aquí</a>  y sigue los pasos sencillos de registro. Proporciona la información necesaria sobre tu entidad y ¡listo!
             </p>
           </div>
           <div>
